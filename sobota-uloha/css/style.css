@@ -1,67 +1,222 @@
-/*!* Responzivne menu *!
-.topnav {
-    overflow: hidden;
-    background-color: #333;
-}
+/* ---BODY RESPOZIVITA--- */
 
-.topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-.topnav a.active {
-    background-color: #04AA6D;
+* {
+    font-family: sans-serif;
     color: white;
 }
 
-.topnav .icon {
-    display: none;
-}*/
+html{
+    scroll-behavior:smooth
+}
 
-/* Fixed NAV bar */
-body {margin:0;}
-
-.navbar {
-    overflow: hidden;
-    background-color: rgba(0,0,0,30%);
-    position: fixed;
-    top: 0;
+body {
+    max-width: 100%;
+    height: auto;
+    background-color: black;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+/* ---HEADER--- */
+header {
+    background-color: #3a3a3a;
     width: 100%;
+    height: 500px;
 }
 
-.navbar a {
-    float: right;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-.navbar a:hover {
-    color: black;
-}
-
-.main {
-    padding: 16px;
-    margin-top: 30px;
-    height: 1500px; /* Used in this example to enable scrolling */
-}
-
-img {
-    width: 1500px;
-    height: 300px;
+.headerimg {
+    height: 500px;
+    width: 100%;
     object-fit: cover;
-    filter: contrast(80%);
+
+
+
+}
+
+/* ---STATICKA NAVIACIA--- */
+.navbar {
+    background-color: rgba(0,0,0,70%);
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    top: 0%;
+    right: 0%;
+}
+
+.nav {
+    display: inline;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    margin: 10px;
+    color: white;
+    bottom: 20%;
+    left: 50%;
+    width: auto;
+    text-transform: uppercase;
+}
+
+.logo {
+    position: relative;
+    top: 10%;
+    left: 5%;
+    width: auto;
+    height: 60px;
+}
+
+.nav:hover {
+    border-bottom: 2px solid rgba(250,250,250, 40%);
+}
+
+/* ---OBSAH--- */
+
+.galeria, .o-mne, .kontakt {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.prva-cast, .druha-cast, .zivotopis, .kontaktujte-ma {
+    background-color: dimgray;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+}
+
+.kontakt-nazov, form {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 20px;
+}
+
+.fotka, .popis, .cislo, .e-mail, .adresa
+{
+    border: 2px solid black;
+    flex: 1 3;
+    row-gap: 50px;
+}
+
+.gallery {
+    width: auto;
+    height: 120%;
+}
+
+.gallery1 {
+    width: 360px;
+    height: 120%;
+    object-fit: cover;
+}
+
+h1 {
+    color: white;
+    text-transform: uppercase;
+}
+
+.skusenosti {
+    border: 2px solid black;
+    background-color: dimgray;
+    width: 100%;
+    height: 200px;
+}
+
+.blinder {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    width: 100%;
+    height: 70px;
+}
+/* ---FOOTER--- */
+
+footer {
+    background-color: black;
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+}
+
+iframe {
+    width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+
+}
+
+.copywrithinfo {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+}
+
+.copy {
+    color: white;
+    position: relative;
+    font-size: 15px;
+}
+
+.social-media-bottoms {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rychle-odkazy {
+    background-color: black;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+}
+
+a.instagram:hover{
+  color: #d2be0e;
+}
+
+.logo2 {
+    flex: 1;
+}
+
+.rychlerychle {
+    flex: 3;
+}
+
+a.nav2 {
+    font-family: sans-serif;
+    text-align: center;
+    margin: 20px;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    float: right;
+}
+
+.logo-rychle {
+    position: relative;
+    margin: 20px;
+    width: auto;
+    height: 80%;
+}
+
+.soc {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    margin: 20px;
+}
+
+input, textarea {
+    background-color: lightslategray;
 }

@@ -5,91 +5,140 @@
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <link href="css/style.css" rel="stylesheet">
   <link href="css/media.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <title>Moje portfólio</title>
+  <link rel="stylesheet" href="css/keyframes.css">
+  <link rel="icon" type="image/png" href="image/Asset%208-8.png"/>
+  <title>Jaroslav Potočný - Web developer</title>
   <script src="js/script.js"></script>
 </head>
 <body>
-  <!--Domov !!!-->
-  <header class="hlavny obrazok">
-  </header>
   <!--Nav bar fixed !!!-->
-  <!--TODO Urobiť fixný nav bar s animáciou-->
   <div class="navbar">
-    <!--TODO Pridať logo vycentovane na ľavo + presmerovanie na domov-->
-    <a href="#domov">Domov</a>
-    <a href="#galeria">Portfolio</a>
-    <a href="#o-mne">O Mne</a>
-    <a href="#kontakt">Kontakt</a>
+    <a href="#domov"><img src="image/Asset%208-8.png" alt="logo" class="logo"></a>
+    <a class="nav" href="#domov">Domov</a>
+    <a class="nav" href="#galeria">Portfolio</a>
+    <a class="nav" href="#o-mne">O mne</a>
+    <a class="nav" href="#kontakt">Kontakt</a>
     <!--TODO Pridať social media buttoms-->
   </div>
+  <!--Domov !!!-->
+  <header class="hlavny obrazok" id="domov">
+    <img src="image/menu_portfoli_06.webp" alt="malfy gin tonic" class="headerimg">
+  </header>
   <!--Portfolio !!!-->
-  <div class="main">
-    <div class="galeria">
-      <div class="prva-cast">
+  <div class="galeria" id="galeria">
+    <div class="blinder"> <h1>Galleria</h1></div>
+    <div class="prva-cast">
         <div class="prva-uroven-1">
-          Prva ftoka
+          <img class="gallery" src="image/chivaspromo_portfoli_02.webp" alt="Chivas Regal promo">
         </div>
         <div class="druha-uroven-1">
-          druha fotka
+          <img class="gallery1" src="image/GTnight_portfoli_03.webp" alt="Gin tonic night">
         </div>
         <div class="tretia-uroven-1">
-          ptretia fotka
+          <img class="gallery" src="image/Halloween_portfoli_02.webp" alt="Halloween cocktail">
         </div>
       </div>
       <div class="druha-cast">
         <div class="prva-uroven-2">
-          Prva ftoka
+          <img class="gallery" src="image/JP_bussines.webp" alt="Portretna fotka">
         </div>
         <div class="druha-uroven-2">
-          druha fotka
+          <img class="gallery" src="image/JP_golf-03.webp" alt="Golf Variant">
         </div>
         <div class="tretia-uroven-2">
-          ptretia fotka
+          <img class="gallery" src="image/menu_portfoli_04.webp" alt="Gimlet fruit">
         </div>
       </div>
     </div>
     <!--O Mne !!!-->
-    <div class="o-mne">
+    <div class="o-mne" id="o-mne">
+      <div class="blinder"></div>
       <div class="zivotopis">
         <div class="fotka">
+          <h3>Moja profilova fotka</h3>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni maxime modi officia sapiente sed.
+          Adipisci aliquam, animi doloribus dolorum ducimus illo inventore itaque molestias mollitia odit, possimus,
+          sapiente similique.
         </div>
         <div class="popis">
+          <h3>Popis o mne</h3>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni maxime modi officia sapiente sed.
+          Adipisci aliquam, animi doloribus dolorum ducimus illo inventore itaque molestias mollitia odit, possimus,
+          sapiente similique.
         </div>
       </div>
       <div class="skusenosti">
+        <h3>Skusenosti v %</h3>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni maxime modi officia sapiente sed.
+        Adipisci aliquam, animi doloribus dolorum ducimus illo inventore itaque molestias mollitia odit, possimus,
+        sapiente similique.
       </div>
     </div>
     <!--Kontakt !!!-->
-    <div class="kontakt">
+    <div class="kontakt" id="kontakt">
+      <div class="blinder"></div>
       <div class="kontaktujte-ma">
         <div class="cislo">
+          <h3>Tel cislo</h3>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni maxime modi officia sapiente sed.
+          Adipisci aliquam, animi doloribus dolorum ducimus illo inventore itaque molestias mollitia odit, possimus,
+          sapiente similique.
         </div>
         <div class="e-mail">
+          <h3>E-mail</h3>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni maxime modi officia sapiente sed.
+          Adipisci aliquam, animi doloribus dolorum ducimus illo inventore itaque molestias mollitia odit, possimus,
+          sapiente similique.
         </div>
         <div class="adresa">
+          <h3>Adresa</h3>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni maxime modi officia sapiente sed.
+          Adipisci aliquam, animi doloribus dolorum ducimus illo inventore itaque molestias mollitia odit, possimus,
+          sapiente similique.
         </div>
       </div>
-      <div class="kontaktujte-formular">
-        <div class="meno-form">
+      <div class="kontakt-nazov">
+        <form action="" method="post">
+          <label for="meno">Meno:</label>
+          <input type="text" id="meno" name="meno" placeholder="Meno" required>
+          <label for="priezvisko">Priezvisko:</label>
+          <input type="text" id="priezvisko" name="priezvisko" placeholder="Priezvisko" required>
+          <label for="mail">E-mail:</label>
+          <input type="text" id="mail" name="mail" placeholder="E-mail" required>
+          <label for="sprava">Správa:</label>
+          <textarea cols="20" id="sprava" name="sprava" placeholder="Vaša správa" rows="10"></textarea>
+          <label for="gdpr"><a href="">Súshlasim s GDPR </a></label>
+          <input type="checkbox" id="gdpr" name="gdrp1">
+          <input type="submit" value="Odoslať">
+        </form>
         </div>
-        <div class="priezvisko-form">
+      <!--Footer !!!-->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2617.4255433620087!2d21.226258899999998!3d49.00248
+  860000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ef29a65d6762f%3A0x70dfa9855d39e2fe!2sMatice%20slovens
+  kej%204768%2F4%2C%20080%2001%20Pre%C5%A1ov!5e0!3m2!1ssk!2ssk!4v1683760450744!5m2!1ssk!2ssk"
+              style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <footer>
+        <div class="rychle-odkazy">
+            <div class="logo2">
+          <a href="#domov"><img class="logo-rychle" src="image/Asset%208-8.png" alt="logo" class="logo"></a>
+            </div>
+            <div class="rychlerychle">
+          <a class="nav2" href="#galeria">Portfolio</a>
+          <a class="nav2" href="#o-mne">O mne</a>
+            </div>
+          </div>
+        <div class="social-media-bottoms">
+          <a class="instagram" href="https://www.instagram.com/jaro_potocny/"><img class="soc" src="image/icon-web/InstagramThin.png" alt="instagram icon"></a>
+          <a class="facebook" href="https://www.facebook.com/jaro.potocny"><img class="soc" src="image/icon-web/Facebook.png" alt="facebook icon"></a>
+          <a class="email" href="mailto:jaroslavpotocny@icloud.com"><img class="soc" src="image/icon-web/Mail.png" alt="mail icon"></a>
+          <a class="telcislo" href="tel:0907112358"><img class="soc" src="image/icon-web/Phone-1.png" alt="phone icon"></a>
         </div>
-        <div class="e-mail-form">
-        </div>
-        <div class="text">
-        </div>
-        <div class="odoslať">
-        </div>
-      </div>
-    </div>
-    <!--Footer !!!-->
-    <footer>
-      <div class="google-maps">
-      </div>
-      <div class="social-media-bottoms">
-      </div>
-    </footer>
+      </footer>
   </div>
+<div class="copywrithinfo">
+  <h3 class="copy">Copyright © 2023. All rights reserved.</h3>
+</div>
 </body>
+<!--TODO urobiť kontabilitu pre všetky web prehliadače-->
 </html>
