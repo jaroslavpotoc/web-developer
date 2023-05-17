@@ -113,9 +113,18 @@
     }
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-    .text {
-        font-size: 11px
+/* Large devices (4K resolution , 2500px and up) */
+@media only screen and (min-width: 2500px) {
+    .topnav img {
+        max-width: 25px;
+        height: auto;
+    }
+
+    .topnav a:not(:first-child) {
+        display: flex;
+    }
+
+    .topnav a.icon {
+        display: none;
     }
 }
