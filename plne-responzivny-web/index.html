@@ -9,44 +9,110 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/media.css" rel="stylesheet">
     <link href="css/keyframe.css" rel="stylesheet">
-    <link href="css/fontface.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-<section class="nav-background">
-    <div class="topnav" id="myTopnav">
-        <a href="#logo">
-            <img alt="JP GENERATION logo" src="image/asset-8-8.png">
-        </a>
-        <a class="icon" href="javascript:void(0);" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-        <a href="#home">Domov</a>
-        <a href="#portfoli">Portfólio</a>
-        <!--DROPLIST: Fotky / Video -->
-        <a href="#services">Služby</a>
-        <!--DROPLIST: Fotoprodukcia / Videoprodukcia / Graficky dizajn / Newsletter reklama / Správa domeny a hostingu / Wordpres web / Sociálne média-->
-        <a href="#price-list">Cenník</a>
-        <!--DROPLIST: Fotoprodukcia / Videoprodukcia / Graficky dizajn / Newsletter reklama / Správa domeny a hostingu / Wordpres web / Sociálne média-->
-        <a href="#about-us">O nás</a>
-        <!--DROPLIST: Kto vlastne sme / Zákaznici / GDPR / Cookies-->
-        <a href="#contact">Kontakt</a>
-        <!--TODO vyhľadavacie menu-->
-        <!--TODO slide left full width menu-->
-        <!--TODO animacia navigacneho menu na X-->
-        <!--TODO Equal width menu-->
-        <!--TODO Nav bar on image-->
-        <!--TODO Clik droplist menu in nav an in slide bar -->
-        <!--TODO Mobile menu logo -->
-        <!--TODO slider na header fotku a ine fotky-->
+    <section class="nav-background">
+        <div class="topnav" id="myTopnav">
+            <a href="#logo">
+                <img alt="JP GENERATION logo" src="image/asset-8-8.png">
+            </a>
+            <a class="icon" href="javascript:void(0);" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="#home">Domov</a>
+            <div class="dropdown">
+                <button class="dropbtn">Portfólio
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#photo">Fotky</a>
+                    <a href="#video">Video</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Služby
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#ser-photo-prod">Foto produkcia</a>
+                    <a href="#ser-video-prod">Video produkcia</a>
+                    <a href="#ser-graph-des">Graficky dizajn</a>
+                    <a href="#ser-news-lett">Newsletter reklama</a>
+                    <a href="#ser-admin-dom-hos">Správa domeny a hostingu</a>
+                    <a href="#ser-word-web">Wordpres web</a>
+                    <a href="#ser-soc-med">Sociálne média</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Cenník
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#price-photo-prod">Foto produkcia</a>
+                    <a href="#price-video-prod">Video produkcia</a>
+                    <a href="#price-graph-des">Graficky dizajn</a>
+                    <a href="#price-news-lett">Newsletter reklama</a>
+                    <a href="#price-admin-dom-hos">Správa domeny a hostingu</a>
+                    <a href="#price-word-web">Wordpres web</a>
+                    <a href="#price-soc-med">Sociálne média</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">O nás
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#about-us">Kto vlastne sme</a>
+                    <a href="#customers">Zákaznici</a>
+                </div>
+            </div>
+                    <a href="#contact">Kontakt</a>
+        </div>
+    </section>
+
+<section class="slider">
+    <div class="slideshow-container">
+
+        <div class="mySlides">
+            <img alt="G&T malfy cocktail" class="sliderimg" src="image/menu_portfoli_06.webp">
+            <div class="text">G&T MALFY</div>
+        </div>
+
+        <div class="mySlides">
+            <img alt="Chivas Regal 15yo and cigar" class="sliderimg" src="image/chivaspromo_portfoli_02.webp">
+            <div class="text">CHIVAS REGAL 15YO & CIGAR PROMO</div>
+        </div>
+
+        <div class="mySlides">
+            <img alt="halloween shot cocktail" class="sliderimg" src="image/halloween_portfoli_02.webp">
+            <div class="text">HALLOWEEN SHOT COCKTAIL MENU</div>
+        </div>
     </div>
-    <!--<img alt="GT night malfy gin" class="malfy" src="image/menu_portfoli_06.webp">-->
+    <div class="dot-div">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
 </section>
+    <script src="js/slider-script.js" type="text/javascript"></script>
+    <script src="js/nav-script.js" type="text/javascript"></script>
+    <script src="js/dropdown-nav-script.js" type="text/javascript"></script>
+</body>
+</html>
+<!--TODO vyhľadavacie menu-->
+<!--TODO slide left full width menu-->
+<!--TODO animacia navigacneho menu na X-->
+<!--TODO Equal width menu-->
+<!--TODO Nav bar on image-->
+<!--TODO Clik droplist menu in nav an in slide bar -->
+<!--TODO Mobile menu logo -->
+<!--TODO slider na header fotku a ine fotky-->
+
 <!--TODO Sroll buttom up -->
 <!--TODO Gallery with filer and gallery prewiev and sroll on image popis-->
 
@@ -68,40 +134,5 @@
 <!--TODO 404 PAGE NOT FOUND STYLE-->
 
 <!--TODO Footer s rychlymi odkazmi + logo + social media + copyright-->
-<section class="slider">
-    <h2>Automatic Slideshow</h2>
-    <p>Change image every 2 seconds:</p>
 
-    <div class="slideshow-container">
-
-        <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-            <img src="image/menu_portfoli_06.webp" style="width:100%">
-            <div class="text">Caption Text</div>
-        </div>
-
-        <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <img src="image/menu_portfoli_06.webp" style="width:100%">
-            <div class="text">Caption Two</div>
-        </div>
-
-        <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="image/menu_portfoli_06.webp" style="width:100%">
-            <div class="text">Caption Three</div>
-        </div>
-
-    </div>
-    <br>
-
-    <div style="text-align:center">
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-    </div>
-</section>
-<script src="js/slider-script.js" type="text/javascript"></script>
-<script src="js/nav-script.js" type="text/javascript"></script>
-</body>
-</html>
+<!--TODO GDPR a COOKIES DAT DO RYCHLE ODKAZY NIE HORE V NAV-->
