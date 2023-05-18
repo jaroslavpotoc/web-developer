@@ -11,10 +11,12 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
     font-family: 'Poppins', sans-serif;
 }
+
 p, i {
     color: white;
     font-family: 'Heebo', sans-serif;
 }
+
 span {
     color: turquoise;
     font-family: 'Poppins', sans-serif;
@@ -158,7 +160,7 @@ span {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 150px;
+  /*  min-height: 150px;*/
     min-width: 200px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -239,7 +241,7 @@ span {
     padding: 10px;
 }
 
-#icon-con1, #icon-con2, #icon-con3  {
+#icon-con1, #icon-con2, #icon-con3 {
     font-size: 50px;
     text-align: left;
     color: turquoise;
@@ -247,6 +249,7 @@ span {
     margin: 40px 40px;
 
 }
+
 .con-h {
     font-weight: bold;
     font-size: 28px;

@@ -73,7 +73,6 @@
     }
 
 
-
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -130,6 +129,7 @@
         max-width: 25px;
         height: auto;
     }
+
     .dropdown-content a {
         float: none;
         color: white;
