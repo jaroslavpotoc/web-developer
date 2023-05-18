@@ -7,5 +7,77 @@
 </head>
 <body>
 
+<h2 style="text-align:center">Slideshow Gallery</h2>
+
+<div class="container">
+    <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+        <img src="images/img_woods_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+        <img src="images/img_5terre_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+        <img src="images/img_mountains_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+        <img src="images/img_lights_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+        <img src="images/img_nature_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+        <img src="images/img_snow_wide.jpg" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+    <div class="caption-container">
+        <p id="caption"></p>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <img alt="The Woods" class="demo cursor" onclick="currentSlide(1)" src="images/img_woods_wide.jpg"
+                 style="width:100%">
+        </div>
+        <div class="column">
+            <img alt="Cinque Terre" class="demo cursor" onclick="currentSlide(2)" src="images/img_5terre_wide.jpg"
+                 style="width:100%">
+        </div>
+        <div class="column">
+            <img alt="Mountains and fjords" class="demo cursor" onclick="currentSlide(3)"
+                 src="images/img_mountains_wide.jpg"
+                 style="width:100%">
+        </div>
+        <div class="column">
+            <img alt="Northern Lights" class="demo cursor" onclick="currentSlide(4)" src="images/img_lights_wide.jpg"
+                 style="width:100%">
+        </div>
+        <div class="column">
+            <img alt="Nature and sunrise" class="demo cursor" onclick="currentSlide(5)" src="images/img_nature_wide.jpg"
+                 style="width:100%">
+        </div>
+        <div class="column">
+            <img alt="Snowy Mountains" class="demo cursor" onclick="currentSlide(6)" src="images/img_snow_wide.jpg"
+                 style="width:100%">
+        </div>
+    </div>
+</div>
+
+
+<script src="js/script.js"></script>
+
 </body>
 </html>
