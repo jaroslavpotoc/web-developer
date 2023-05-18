@@ -1,6 +1,23 @@
 * {
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+}
+
+/*------------ BODY ------------*/
+body {
+    background-color: black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+p, i {
+    color: white;
+    font-family: 'Heebo', sans-serif;
+}
+span {
+    color: turquoise;
+    font-family: 'Poppins', sans-serif;
 }
 
 /*------------ NAVBAR ------------*/
@@ -25,7 +42,7 @@
 }
 
 .topnav a:hover {
-    border-bottom: 2px solid rgba(250, 250, 250, 40%);
+    color: turquoise;
 }
 
 /*------------ SLIDER PHOTO------------*/
@@ -77,6 +94,7 @@
     width: 100%;
     height: auto;
     vertical-align: middle;
+    filter: opacity(50%);
 }
 
 
@@ -85,7 +103,7 @@
 
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #333;
+    background-color: black;
     overflow: hidden;
 }
 
@@ -102,7 +120,7 @@
 
 /* Add an active class to highlight the current page */
 .active {
-    background-color: #04AA6D;
+    background-color: #3a3a3a;
     color: white;
 }
 
@@ -151,14 +169,12 @@
 
 /* Add a dark background on topnav links and the dropdown button on hover */
 .topnav a:hover, .dropdown:hover .dropbtn {
-    background-color: #555;
-    color: white;
+    color: turquoise;
 }
 
 /* Add a grey background to dropdown links on hover */
 .dropdown-content a:hover {
-    background-color: #ddd;
-    color: black;
+    color: turquoise;
 }
 
 /* Show the dropdown menu when the user moves the mouse over the dropdown button */
@@ -189,4 +205,78 @@
 
 .change .bar3 {
     transform: translate(0, -11px) rotate(45deg);
+}
+
+/*-------------IDEA OF THE COMAPNY---------------*/
+.concept-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    padding: 100px;
+}
+
+.concept-container > div {
+    background-color: #121212;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    justify-content: center;
+    flex: 1 3;
+    max-height: 500px;
+    max-width: 350px;
+    padding: 10px;
+}
+
+#icon-con1, #icon-con2, #icon-con3  {
+    font-size: 50px;
+    text-align: left;
+    color: turquoise;
+    display: block;
+    margin: 40px 40px;
+
+}
+.con-h {
+    font-weight: bold;
+    font-size: 28px;
+    overflow-wrap: normal;
+    margin: 16px 40px;
+    width: 250px;
+    word-break: normal;
+    line-height: 50px;
+    text-align: left;
+    color: #FCFCFC;
+}
+
+.kon-con2 {
+    border: 2px solid turquoise;
+}
+
+.kon-con1:hover {
+    border: 2px solid turquoise;
+}
+
+.kon-con3:hover {
+    border: 2px solid turquoise;
+}
+
+.line-con {
+    border: 2px solid turquoise;
+    width: 80px;
+    display: block;
+    text-align: left;
+    margin: 16px 40px;
+}
+
+.spacer {
+    display: block;
+    height: 32px;
+}
+
+.con-p {
+    font-size: 15px;
+    margin: 16px 40px;
+    text-align: left;
+    line-height: 20px;
+    font-weight: 200;
+    color: #D0D0D0;
 }

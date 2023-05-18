@@ -160,7 +160,7 @@
 
     .topnav a:not(:first-child), .dropdown .dropbtn {
         display: flex;
-        height: 64px;
+        height: 84px;
     }
 
     .topnav a.icon {
@@ -171,7 +171,7 @@
         position: relative;
     }
 
-    topnav.responsive .dropdown .dropbtn {
+    .topnav.responsive .dropdown .dropbtn {
         display: block;
         width: 100%;
         text-align: left;
@@ -198,7 +198,8 @@
     }
 
     #arrow1, #arrow2, #arrow3, #arrow4 {
-        margin-left: 5px
+        margin-left: 5px;
+        margin-top: 3px;
     }
 }
 
@@ -211,7 +212,7 @@
 
     .topnav a:not(:first-child), .dropdown .dropbtn {
         display: flex;
-        height: 64px;
+        height: 84px;
     }
 
     .topnav a.icon {
@@ -222,7 +223,7 @@
         position: relative;
     }
 
-    topnav.responsive .dropdown .dropbtn {
+    .topnav.responsive .dropdown .dropbtn {
         display: block;
         width: 100%;
         text-align: left;

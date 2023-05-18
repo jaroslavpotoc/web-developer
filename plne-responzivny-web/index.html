@@ -9,12 +9,9 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/media.css" rel="stylesheet">
     <link href="css/keyframe.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com" rel="preconnect">
-    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
-    <link href="https://fonts.googleapis.com" rel="preconnect">
-    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-          rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
 <!-------------NAV MENU--------------->
@@ -29,7 +26,7 @@
         <a href="#home">Domov</a>
         <div class="dropdown">
             <button class="dropbtn">Portfólio
-                <i class="fa fa-caret-down" id="arrow1"></i>
+                <i class="fa fa-angle-down" aria-hidden="true" id="arrow1"></i>
             </button>
             <div class="dropdown-content">
                 <a href="#photo">Fotky</a>
@@ -38,7 +35,7 @@
         </div>
         <div class="dropdown">
             <button class="dropbtn">Služby
-                <i class="fa fa-caret-down" id="arrow2"></i>
+                <i class="fa fa-angle-down" aria-hidden="true" id="arrow2"></i>
             </button>
             <div class="dropdown-content">
                 <a href="#ser-photo-prod">Foto produkcia</a>
@@ -52,7 +49,7 @@
         </div>
         <div class="dropdown">
             <button class="dropbtn">Cenník
-                <i class="fa fa-caret-down" id="arrow3"></i>
+                <i class="fa fa-angle-down" aria-hidden="true" id="arrow3"></i>
             </button>
             <div class="dropdown-content">
                 <a href="#price-photo-prod">Foto produkcia</a>
@@ -66,7 +63,7 @@
         </div>
         <div class="dropdown">
             <button class="dropbtn">O nás
-                <i class="fa fa-caret-down" id="arrow4"></i>
+                <i class="fa fa-angle-down" aria-hidden="true" id="arrow4"></i>
             </button>
             <div class="dropdown-content">
                 <a href="#about-us">Kto vlastne sme</a>
@@ -106,23 +103,25 @@
 <!-------------IDEA OF THE COMAPNY--------------->
 <section class="concept">
     <div class="concept-container">
-        <div>
-            <i aria-hidden="true" class="fa fa-paper-plane-o"></i>
-            <h3>Koncept budúcnosti</h3>
-            <div class="line"></div>
-            <p>Koncept na mieru ktorý kráča s digitálnou dobou…</p>
+        <div class="kon-con1">
+            <i id="icon-con1" aria-hidden="true" class="fa fa-paper-plane-o"></i>
+            <h3 class="con-h">Koncept budúcnosti</h3>
+            <div class="line-con"></div>
+            <p class="con-p">Koncept na mieru ktorý kráča s digitálnou dobou…</p>
         </div>
-        <div>
-            <i aria-hidden="true" class="fa fa-globe"></i>
-            <h3>Veľké nápady</h3>
-            <div class="line"></div>
-            <p>Netrápte sa s tým že nemáte predstavu ako by to malo vyzerať. Vymyslime to za Vás…</p>
+        <div class="kon-con2">
+            <i id="icon-con2" aria-hidden="true" class="fa fa-globe"></i>
+            <h3 class="con-h">Veľké nápady</h3>
+            <span class="spacer"></span>
+            <div class="line-con"></div>
+            <p class="con-p">Netrápte sa s tým že nemáte predstavu ako by to malo vyzerať. Vymyslime to za Vás…</p>
         </div>
-        <div>
-            <i aria-hidden="true" class="fa fa-lightbulb-o"></i>
-            <h3>Kreatívne riešenia</h3>
-            <div class="line"></div>
-            <p>Veľké nápady si žiadajú kreatívne riešenia ktoré Vám poskytneme…</p>
+        <div class="kon-con3">
+            <i id="icon-con3" aria-hidden="true" class="fa fa-lightbulb-o"></i>
+            <h3 class="con-h" >Kreatívne riešenia</h3>
+            <span class="spacer"></span>
+            <div class="line-con"></div>
+            <p class="con-p">Veľké nápady si žiadajú kreatívne riešenia ktoré Vám poskytneme…</p>
         </div>
     </div>
 </section>
@@ -144,20 +143,20 @@
     </header>
     <section class="content1">
         <div>
-            <i aria-hidden="true" class="fa fa-area-chart"></i>
-            <h3>Digitálna stratégia</h3>
-            <p>Každá dobra stratégia potrebuje analýzu ktorú Vám poskytneme…</p>
+            <i aria-hidden="true" class="fa fa-camera"></i>
+            <h3>Foto produkcia</h3>
+            <p>Profesionálne fotografie pre Váš e-shop, sociálne siete alebo udalosť na ktorú nechcete zabudnúť…</p>
+        </div>
+        <div>
+            <i class="fa fa-video-camera" aria-hidden="true"></i>
+            <h3>Video produkcia</h3>
+            <p>Využívali ste do teraz len free mobilne aplikácie pre Vašú tvorbu? A po nahraní sa Vám zdalo že už to nieje ono? Spracujeme Vám video na ktoré budete vedieť pozerať dookola…</p>
         </div>
         <div>
             <i aria-hidden="true" class="fa fa-pencil-square-o"></i>
             <h3>Graficky dizajn</h3>
             <p>Banner, logo, plagát, vizitka, vizualizácia…
                 Všetko čo Vám napadne pod slovo graficky dizajn…</p>
-        </div>
-        <div>
-            <i aria-hidden="true" class="fa fa-envelope"></i>
-            <h3>Newsletter reklama</h3>
-            <p>Potrebujete dostať informácie bližšie ku zákaznikovi? Nechceš aby tvoj mail vyzeral obyčajne?</p>
         </div>
     </section>
     <section class="content2">
@@ -170,11 +169,6 @@
             <i aria-hidden="true" class="fa fa-server"></i>
             <h3>Správa domeny a hostingu</h3>
             <p>Zaberá Vám správa Vášho e-shopu veľa času? Nechatje to na Nás…</p>
-        </div>
-        <div>
-            <i aria-hidden="true" class="fa fa-camera"></i>
-            <h3>Foto produkcia</h3>
-            <p>Profesionálne fotografie pre Váš e-shop, sociálne siete alebo udalosť na ktorú nechcete zabudnúť…</p>
         </div>
     </section>
 </section>
@@ -230,39 +224,29 @@
             </div>
         </header>
         <section class="skill-list">
-            <div class="name">
+            <div class="name1">
                 <div class="type"><span>Foto produkcia</span></div>
-                <div class="percent">99%</div>
+                <div class="percent"><span>99%</span></div>
                 <div class="turquise-bar"></div>
             </div>
             <div class="name2">
                 <div class="type"><span>Graficky diazjn</span></div>
-                <div class="percent">99%</div>
+                <div class="percent"><span>99%</span></div>
                 <div class="turquise-bar"></div>
             </div>
             <div class="name3">
-                <div class="type"><span>Digitálna stratégia</span></div>
-                <div class="percent">95%</div>
+                <div class="type"><span>WordPress web</span></div>
+                <div class="percent"><span>92%</span></div>
                 <div class="turquise-bar"></div>
             </div>
             <div class="name4">
-                <div class="type"><span>WordPress web</span></div>
-                <div class="percent">92%</div>
+                <div class="type"><span>Video produkcia</span></div>
+                <div class="percent"><span>89%</span></div>
                 <div class="turquise-bar"></div>
             </div>
             <div class="name5">
-                <div class="type"><span>Video produkcia</span></div>
-                <div class="percent">89%</div>
-                <div class="turquise-bar"></div>
-            </div>
-            <div class="name6">
-                <div class="type"><span>Správa domeny alebo hostingu</span></div>
-                <div class="percent">93%</div>
-                <div class="turquise-bar"></div>
-            </div>
-            <div class="name7">
-                <div class="type"><span>Newsletter reklama</span></div>
-                <div class="percent">94%</div>
+                <div class="type"><span>Správa domeny a hostingu</span></div>
+                <div class="percent"><span>93%</span></div>
                 <div class="turquise-bar"></div>
             </div>
         </section>
@@ -315,7 +299,7 @@
                     <a href="">Graficky dizajn</a>
                 </div>
                 <div>
-                    <a href="">Digitálna stratégia</a>
+                    <a href="">Wordpres web</a>
                 </div>
                 <div>
                     <a href="">Cenník</a>
