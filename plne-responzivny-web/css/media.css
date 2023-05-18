@@ -72,7 +72,6 @@
         display: block;
     }
 
-
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -215,7 +214,7 @@
     }
 
     .topnav.responsive .dropdown {
-        float: none;
+        float: right;
     }
 
     .topnav.responsive a {
@@ -238,6 +237,37 @@
         margin-left: 5px;
         margin-top: 3px;
     }
+
+    .topnav {
+        padding-left: 580px;
+    }
+    .text {
+        color: turquoise;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 8px 8px 12px 100px;
+        position: absolute;
+        bottom: 800px;
+        width: 100%;
+        font-family: 'Poppins', sans-serif;
+        text-align: left;
+        float: left;
+        text-transform: uppercase;
+    }
+
+    .text2 {
+        color: #FCFCFC;
+        font-size: 76px;
+        font-weight: bold;
+        padding: 8px 8px 12px 100px;
+        position: absolute;
+        bottom: 590px;
+        width: 70%;
+        line-height: 1.2em;
+        font-family: 'Poppins', sans-serif;
+        text-align: left;
+        float: left;
+    }
 }
 
 /* Large devices (4K resolution , 2500px and up) */
@@ -250,6 +280,7 @@
     .topnav a:not(:first-child), .dropdown .dropbtn {
         display: flex;
         max-height: 84px;
+        font-size: 25px;
     }
 
     .topnav a.icon {
@@ -289,5 +320,35 @@
     #arrow1, #arrow2, #arrow3, #arrow4 {
         margin-left: 5px
     }
+    .topnav {
+        padding-left: 1200px;
+    }
 
+    .text {
+        color: turquoise;
+        font-size: 32px;
+        font-weight: bold;
+        padding: 8px 8px 12px 200px;
+        position: absolute;
+        bottom: 1470px;
+        width: 100%;
+        font-family: 'Poppins', sans-serif;
+        text-align: left;
+        float: left;
+        text-transform: uppercase;
+    }
+
+    .text2 {
+        color: #FCFCFC;
+        font-size: 152px;
+        font-weight: bold;
+        padding: 8px 8px 12px 200px;
+        position: absolute;
+        bottom: 1070px;
+        width: 70%;
+        line-height: 1.2em;
+        font-family: 'Poppins', sans-serif;
+        text-align: left;
+        float: left;
+    }
 }
