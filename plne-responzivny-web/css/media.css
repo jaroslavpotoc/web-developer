@@ -2,7 +2,7 @@
 @media screen and (max-width: 600px) {
     .topnav a:not(:first-child), .dropdown .dropbtn {
         display: none;
-        height: 64px;
+        max-height: 64px;
     }
 
     .topnav a.icon {
@@ -61,7 +61,7 @@
 @media only screen and (min-width: 600px) {
     .topnav a:not(:first-child), .dropdown .dropbtn {
         display: none;
-        height: 64px;
+        max-height: 64px;
     }
 
     .topnav a.icon {
@@ -115,7 +115,7 @@
 @media only screen and (min-width: 768px) {
     .topnav a:not(:first-child), .dropdown .dropbtn {
         display: none;
-        height: 64px;
+        max-height: 64px;
     }
 
     .topnav a.icon {
@@ -160,7 +160,7 @@
 
     .topnav a:not(:first-child), .dropdown .dropbtn {
         display: flex;
-        height: 84px;
+        max-height: 84px;
     }
 
     .topnav a.icon {
@@ -212,7 +212,7 @@
 
     .topnav a:not(:first-child), .dropdown .dropbtn {
         display: flex;
-        height: 84px;
+        max-height: 84px;
     }
 
     .topnav a.icon {
