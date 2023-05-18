@@ -116,7 +116,6 @@ span {
 /* Add an active class to highlight the current page */
 .active {
     background-color: turquoise;
-    color: white;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
