@@ -26,6 +26,7 @@
         display: block;
         width: 100%;
         text-align: left;
+        background-color: #0B0C0F;
     }
 
     .topnav.responsive .icon {
@@ -55,6 +56,24 @@
         display: inline-block;
         margin-left: 170px;
     }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        background-color: #0B0C0F;
+    }
+
+    .dropdown-content a {
+        float: none;
+        color: white;
+        padding: 12px 16px 12px 50px;
+        text-decoration: none;
+        display: block;
+    }
+
+
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -85,6 +104,7 @@
         display: block;
         width: 100%;
         text-align: left;
+        background-color: #0B0C0F;
     }
 
     .topnav.responsive .icon {
@@ -103,11 +123,19 @@
         float: none;
         display: block;
         text-align: left;
+        background-color: #0B0C0F;
     }
 
     .topnav img {
         max-width: 25px;
         height: auto;
+    }
+    .dropdown-content a {
+        float: none;
+        color: white;
+        padding: 12px 16px 12px 50px;
+        text-decoration: none;
+        display: block;
     }
 }
 
