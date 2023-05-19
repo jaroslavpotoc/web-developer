@@ -1,5 +1,3 @@
-
-
 * {
     box-sizing: border-box;
 }
@@ -38,7 +36,7 @@ span {
 .topnav a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: #FCFCFC;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -109,14 +107,14 @@ span {
 .topnav a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: #FCFCFC;
     text-align: center;
     padding: 15px 15px 15px 30px;
     text-decoration: none;
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 400;
 }
 
 /* Add an active class to highlight the current page */
@@ -147,15 +145,15 @@ span {
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 400;
 }
 
 /* Style the dropdown content (hidden by default) */
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-  /*  min-height: 150px;*/
+    background-color: #FCFCFC;
+  /*min-height: 150px;*/
     min-width: 200px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -163,7 +161,7 @@ span {
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 400;
 }
 
 /* Style the links inside the dropdown */
@@ -199,7 +197,7 @@ span {
 .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
-    background-color: #333;
+    background-color: #0B0C0F;
     margin: 6px 0;
     transition: 0.4s;
 }
@@ -233,7 +231,7 @@ span {
     text-align: center;
     line-height: 75px;
     max-height: 500px;
-    max-width: 350px;
+    max-width: 370px;
     padding: 15px;
 }
 
@@ -247,7 +245,7 @@ span {
 }
 
 .con-h {
-    font-weight: bold;
+    font-weight: 600;
     font-size: 28px;
     overflow-wrap: normal;
     margin: 16px 40px;
@@ -291,7 +289,7 @@ span {
     padding: 10px 0 20px 0;
     text-align: left;
     line-height: 20px;
-    font-weight: 200;
+    font-weight: 300;
     color: #D0D0D0;
 }
 
@@ -300,6 +298,7 @@ span {
 .headline-con {
     display: flex;
     flex-direction: row;
+    padding-left: 125px;
 }
 
 .con-main {
@@ -315,18 +314,21 @@ span {
 }
 
 .services {
-    padding:100px 200px 100px 200px;
+    padding: 100px 50px 100px 50px;
 }
 
 header > h2 {
     font-size: 48px;
+    font-weight: 700;
     margin: 0;
     text-transform: uppercase;
 }
 
 .con-look {
     text-transform: uppercase;
+    font-weight: 500;
     margin: 20px 0 55px 0;
+    padding-left: 125px;
 }
 
 .content1 {
@@ -341,7 +343,7 @@ header > h2 {
     text-align: center;
     line-height: 75px;
     max-height: 500px;
-    max-width: 350px;
+    max-width: 370px;
     padding: 15px;
     border-bottom: 4px solid #FCFCFC;
 }
@@ -358,7 +360,7 @@ header > h2 {
     text-align: center;
     line-height: 75px;
     max-height: 500px;
-    max-width: 350px;
+    max-width: 370px;
     padding: 15px;
     border-bottom: 4px solid #FCFCFC;
 }
@@ -373,7 +375,7 @@ header > h2 {
 
 h3.turquise-bl {
     color: #000000;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 24px;
     overflow-wrap: normal;
     margin: 16px 40px;
@@ -384,8 +386,8 @@ h3.turquise-bl {
 }
 
 div > h3 {
-    font-weight: bold;
-    font-size: 28px;
+    font-weight: 700;
+    font-size: 24px;
     overflow-wrap: normal;
     margin: 16px 40px;
     max-width: 250px;
@@ -404,3 +406,36 @@ div > h3 {
     border-bottom: 4px solid #66FCF1;
     transition: 0.3s;
 }
+
+.con-p {
+    font-size: 15px;
+    margin: 16px 40px;
+    padding: 10px 0 20px 0;
+    text-align: left;
+    line-height: 20px;
+    font-weight: 300;
+    color: #D0D0D0;
+}
+
+
+.con-p-black {
+    font-size: 15px;
+    margin: 16px 40px;
+    padding: 10px 0 20px 0;
+    text-align: left;
+    line-height: 20px;
+    font-weight: 300;
+    color: #000000;
+}
+
+#ser-icon1, #ser-icon2, #ser-icon3,
+    #ser-icon4, #ser-icon5, #ser-icon6 {
+    font-size: 40px;
+    text-align: left;
+    color: #66FCF1;
+    display: block;
+    margin: 22px 40px 12px 40px;
+
+}
+
+/*-------------PROJECT--------------*/

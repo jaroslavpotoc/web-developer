@@ -71,7 +71,7 @@
         text-decoration: none;
         display: block;
     }
-
+x
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -245,7 +245,7 @@
     .text {
         color: #66FCF1;
         font-size: 16px;
-        font-weight: bold;
+        font-weight: 500;
         padding: 8px 8px 12px 100px;
         position: absolute;
         bottom: 800px;
@@ -259,7 +259,7 @@
     .text2 {
         color: #FCFCFC;
         font-size: 76px;
-        font-weight: bold;
+        font-weight: 600;
         padding: 8px 8px 12px 100px;
         position: absolute;
         bottom: 590px;
@@ -329,7 +329,7 @@
     .text {
         color: #66FCF1;
         font-size: 32px;
-        font-weight: bold;
+        font-weight: 500;
         padding: 8px 8px 12px 200px;
         position: absolute;
         bottom: 1470px;
@@ -343,7 +343,7 @@
     .text2 {
         color: #FCFCFC;
         font-size: 152px;
-        font-weight: bold;
+        font-weight: 600;
         padding: 8px 8px 12px 200px;
         position: absolute;
         bottom: 1070px;
