@@ -241,6 +241,7 @@
     .topnav {
         padding-left: 580px;
     }
+
     .text {
         color: turquoise;
         font-size: 16px;
@@ -320,6 +321,7 @@
     #arrow1, #arrow2, #arrow3, #arrow4 {
         margin-left: 5px
     }
+
     .topnav {
         padding-left: 1200px;
     }
