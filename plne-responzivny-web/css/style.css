@@ -51,46 +51,19 @@ span {
     color: #66FCF1;
 }
 
-/*------------ SLIDER PHOTO------------*/
-
-.mySlides {
-    display: none;
+.nav-complet {
+    display: flex;
+    flex-direction: row;
 }
 
-/* Slideshow container */
-.slideshow-container {
-    max-width: 2560px;
-    position: relative;
-    margin: auto;
+.log-div {
+    margin: 2px;
+    padding-left: 230px;
 }
 
-/* Caption text */
-
-/* The dots/bullets/indicators */
-.dot {
-    cursor: pointer;
-    height: 10px;
-    width: 10px;
-    margin: 0 2px;
-    background-color: #FCFCFC;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active {
-    background-color: #717171;
-}
-
-.dot-div {
-    text-align: center;
-}
-
-.sliderimg {
-    width: 100%;
+#logo {
+    max-width: 50px;
     height: auto;
-    vertical-align: middle;
-    filter: opacity(50%);
 }
 
 
@@ -153,7 +126,7 @@ span {
     display: none;
     position: absolute;
     background-color: #FCFCFC;
-  /*min-height: 150px;*/
+    /*min-height: 150px;*/
     min-width: 200px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -212,6 +185,49 @@ span {
 
 .change .bar3 {
     transform: translate(0, -11px) rotate(45deg);
+}
+
+
+/*------------ SLIDER PHOTO------------*/
+
+.mySlides {
+    display: none;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 2560px;
+    position: relative;
+    margin: auto;
+}
+
+/* Caption text */
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #FCFCFC;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+.dot-div {
+    text-align: center;
+}
+
+.sliderimg {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    filter: opacity(50%);
 }
 
 /*-------------IDEA OF THE COMAPNY---------------*/
