@@ -460,6 +460,28 @@ div > h3 {
 
 /*-------------PROJECT--------------*/
 
+.headline-con {
+    display: flex;
+    flex-direction: row;
+    padding-left: 125px;
+}
+
+.con-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.line-con1 {
+    border: 2px solid #66FCF1;
+    width: 80px;
+    display: block;
+    text-align: left;
+    margin: 35px 15px 0 0;
+}
+
+.services {
+    padding: 100px 50px 100px 50px;
+}
 
 /*-------------BUTTOM--------------*/
 .new-gen {
@@ -502,7 +524,6 @@ div > h3 {
     0 0 25px #66FCF1,
     0 0 50px #66FCF1,
     0 0 200px #66FCF1;
-    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
 }
 
 .button-gen span {
@@ -663,3 +684,31 @@ ul li:nth-child(4):hover span {
 ul li:nth-child(5):hover span {
     background: #7a7c7a;
 }
+
+/*-------------SKILL LIST--------------*/
+
+header > .skills {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+    word-break: break-all;
+    max-width: 475px;
+    line-height: 60px;
+
+}
+
+.skill-text {
+    font-size: 15px;
+    margin: 16px 16px 40px 125px;
+    padding: 10px 0 20px 0;
+    text-align: left;
+    line-height: 20px;
+    font-weight: 300;
+    color: #D0D0D0;
+    font-family: 'Heebo', sans-serif;
+    word-break: keep-all;
+    max-width: 450px;
+}
+
+/*-------------PROGRES BAR--------------*/
