@@ -236,6 +236,7 @@ span {
 .concept {
     padding: 50px;
 }
+
 .concept-container {
     display: flex;
     flex-wrap: wrap;
@@ -280,12 +281,12 @@ span {
 
 .kon-con1:hover {
     border: 2px solid #66FCF1;
-    transition:  .3s;
+    transition: .3s;
 }
 
 .kon-con3:hover {
     border: 2px solid #66FCF1;
-    transition:  .3s;
+    transition: .3s;
 }
 
 .line-con {
@@ -323,6 +324,7 @@ span {
     display: flex;
     flex-direction: column;
 }
+
 .line-con1 {
     border: 2px solid #66FCF1;
     width: 80px;
@@ -447,7 +449,7 @@ div > h3 {
 }
 
 #ser-icon1, #ser-icon2, #ser-icon3,
-    #ser-icon4, #ser-icon5, #ser-icon6 {
+#ser-icon4, #ser-icon5, #ser-icon6 {
     font-size: 40px;
     text-align: left;
     color: #66FCF1;
@@ -459,8 +461,6 @@ div > h3 {
 /*-------------PROJECT--------------*/
 
 
-
-
 /*-------------BUTTOM--------------*/
 .new-gen {
     height: 200px;
@@ -468,7 +468,7 @@ div > h3 {
     padding-left: 50px;
 }
 
-.wrapper{
+.wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -477,7 +477,8 @@ div > h3 {
     bottom: 200px;
     text-decoration: none;
 }
-.button-gen{
+
+.button-gen {
     position: relative;
     display: inline-block;
     padding: 25px 30px;
@@ -493,7 +494,8 @@ div > h3 {
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
 }
-.button-gen:hover{
+
+.button-gen:hover {
     background-color: #66FCF1;
     color: #050801;
     box-shadow: 0 0 5px #66FCF1,
@@ -503,11 +505,12 @@ div > h3 {
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
 }
 
-.button-gen span{
+.button-gen span {
     position: absolute;
     display: block;
 }
-.button-gen span:nth-child(1){
+
+.button-gen span:nth-child(1) {
     top: 0;
     left: 0;
     width: 100%;
@@ -516,7 +519,7 @@ div > h3 {
     animation: animate1 1s infinite;
 }
 
-.button-gen span:nth-child(2){
+.button-gen span:nth-child(2) {
     top: -100%;
     right: 0;
     width: 2px;
@@ -525,7 +528,8 @@ div > h3 {
     animation: animate2 1s infinite;
     animation-delay: .25s;
 }
-.button-gen span:nth-child(3){
+
+.button-gen span:nth-child(3) {
     bottom: 0;
     right: 0;
     width: 100%;
@@ -535,7 +539,7 @@ div > h3 {
     animation-delay: .5s;
 }
 
-.button-gen span:nth-child(4){
+.button-gen span:nth-child(4) {
     bottom: -100%;
     left: 0;
     width: 2px;
@@ -551,17 +555,20 @@ div > h3 {
     margin: 0;
     padding: 0;
 }
+
 .soc-an {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 120px;
 }
+
 ul {
     position: relative;
     display: flex;
     transform-style: preserve-3d;
 }
+
 ul li {
     position: relative;
     list-style: none;
@@ -569,6 +576,7 @@ ul li {
     height: 40px;
     margin: 0 20px;
 }
+
 ul li::before {
     content: '';
     position: absolute;
@@ -579,6 +587,7 @@ ul li::before {
     background: #2a2a2a;
     transform: skewX(-41deg);
 }
+
 ul li::after {
     content: '';
     position: absolute;
@@ -589,6 +598,7 @@ ul li::after {
     background: #2a2a2a;
     transform: skewY(-49deg);
 }
+
 ul li span {
     position: absolute;
     width: 100%;
@@ -601,44 +611,55 @@ ul li span {
     font-size: 25px !important;
     padding: 10px 10px 10px 10px;
 }
+
 ul li:hover span {
     z-index: 1000;
     transition: .3s;
     color: #fff;
     box-shadow: -1px 1px 1px rgba(0, 0, 0, .5);
 }
+
 ul li:hover span:nth-child(5) {
     transform: translate(40px, -40px);
     opacity: 1;
 }
+
 ul li:hover span:nth-child(4) {
     transform: translate(30px, -30px);
     opacity: .8;
 }
+
 ul li:hover span:nth-child(3) {
     transform: translate(20px, -20px);
     opacity: .6;
 }
+
 ul li:hover span:nth-child(2) {
     transform: translate(10px, -10px);
     opacity: .4;
 }
+
 ul li:hover span:nth-child(1) {
     transform: translate(0, 0);
     opacity: .2;
 }
+
 ul li:nth-child(1):hover span {
     background: #3b79a0;
 }
+
 ul li:nth-child(2):hover span {
     background: #cf5c80;
 }
+
 ul li:nth-child(3):hover span {
     background: #cf5c60;
 }
+
 ul li:nth-child(4):hover span {
     background: #3a7933;
 }
+
 ul li:nth-child(5):hover span {
     background: #7a7c7a;
 }
