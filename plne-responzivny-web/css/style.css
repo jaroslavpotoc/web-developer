@@ -199,6 +199,7 @@ span {
     max-width: 2560px;
     position: relative;
     margin: auto;
+    z-index: -1;
 }
 
 /* Caption text */
@@ -228,6 +229,7 @@ span {
     height: auto;
     vertical-align: middle;
     filter: opacity(50%);
+    z-index: -1;
 }
 
 /*-------------IDEA OF THE COMAPNY---------------*/
@@ -455,3 +457,188 @@ div > h3 {
 }
 
 /*-------------PROJECT--------------*/
+
+
+
+
+/*-------------BUTTOM--------------*/
+.new-gen {
+    height: 200px;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    background-color: #000;
+    bottom: 200px;
+    text-decoration: none;
+}
+.button-gen{
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #66FCF1;
+    font-size: 1.2rem;
+    font-weight: 300;
+    transition: .9s;
+    overflow: hidden;
+    margin-right: 70px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+.button-gen:hover{
+    background-color: #66FCF1;
+    color: #050801;
+    box-shadow: 0 0 5px #66FCF1,
+    0 0 25px #66FCF1,
+    0 0 50px #66FCF1,
+    0 0 200px #66FCF1;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+.button-gen span{
+    position: absolute;
+    display: block;
+}
+.button-gen span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #66FCF1);
+    animation: animate1 1s infinite;
+}
+
+.button-gen span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #66FCF1);
+    animation: animate2 1s infinite;
+    animation-delay: .25s;
+}
+.button-gen span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #66FCF1);
+    animation: animate3 1s infinite;
+    animation-delay: .5s;
+}
+
+.button-gen span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #66FCF1);
+    animation: animate4 1s infinite;
+    animation-delay: .75s;
+}
+
+/*-------------BUTTOM--------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.soc-an {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 120px;
+}
+ul {
+    position: relative;
+    display: flex;
+    transform-style: preserve-3d;
+}
+ul li {
+    position: relative;
+    list-style: none;
+    width: 40px;
+    height: 40px;
+    margin: 0 20px;
+}
+ul li::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: -5px;
+    width: 100%;
+    height: 10px;
+    background: #2a2a2a;
+    transform: skewX(-41deg);
+}
+ul li::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -9px;
+    width: 9px;
+    height: 100%;
+    background: #2a2a2a;
+    transform: skewY(-49deg);
+}
+ul li span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex !important;
+    background: #2a2a2a;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 25px !important;
+    padding: 10px 10px 10px 10px;
+}
+ul li:hover span {
+    z-index: 1000;
+    transition: .3s;
+    color: #fff;
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, .5);
+}
+ul li:hover span:nth-child(5) {
+    transform: translate(40px, -40px);
+    opacity: 1;
+}
+ul li:hover span:nth-child(4) {
+    transform: translate(30px, -30px);
+    opacity: .8;
+}
+ul li:hover span:nth-child(3) {
+    transform: translate(20px, -20px);
+    opacity: .6;
+}
+ul li:hover span:nth-child(2) {
+    transform: translate(10px, -10px);
+    opacity: .4;
+}
+ul li:hover span:nth-child(1) {
+    transform: translate(0, 0);
+    opacity: .2;
+}
+ul li:nth-child(1):hover span {
+    background: #3b79a0;
+}
+ul li:nth-child(2):hover span {
+    background: #cf5c80;
+}
+ul li:nth-child(3):hover span {
+    background: #cf5c60;
+}
+ul li:nth-child(4):hover span {
+    background: #3a7933;
+}
+ul li:nth-child(5):hover span {
+    background: #7a7c7a;
+}

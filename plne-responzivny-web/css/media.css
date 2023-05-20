@@ -45,6 +45,7 @@
         float: none;
         display: block;
         text-align: left;
+        color: #FCFCFC;
     }
 
     .topnav img {
@@ -122,6 +123,7 @@ x
         display: block;
         text-align: left;
         background-color: #0B0C0F;
+        color: #FCFCFC;
     }
 
     .topnav img {
@@ -254,6 +256,7 @@ x
         text-align: left;
         float: left;
         text-transform: uppercase;
+        z-index: 1;
     }
 
     .text2 {
@@ -268,6 +271,7 @@ x
         font-family: 'Poppins', sans-serif;
         text-align: left;
         float: left;
+        z-index: 1;
     }
 }
 
@@ -338,6 +342,7 @@ x
         text-align: left;
         float: left;
         text-transform: uppercase;
+        z-index: 1;
     }
 
     .text2 {
@@ -352,5 +357,6 @@ x
         font-family: 'Poppins', sans-serif;
         text-align: left;
         float: left;
+        z-index: 1;
     }
 }
