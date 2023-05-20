@@ -486,8 +486,12 @@ div > h3 {
     /*-------------PROJECT-GALLERY--------------*/
 .gallery {
     width: 100%;
+    height: auto;
     overflow-x: scroll;
     white-space: nowrap;
+}
+.project {
+padding: 100px 50px 100px 50px;
 }
 
 ::-webkit-scrollbar {
@@ -496,7 +500,7 @@ div > h3 {
 
 .slide {
     font-size: 42px;
-    max-width: 318px;
+    max-width: 100%;
     max-height: 480px;
     margin: 15px;
     background: #000000;
@@ -512,6 +516,7 @@ div > h3 {
     max-width: 100%;
     max-height: 480px;
 }
+
 .ImgThumbnail {
     border-radius: 5px;
     cursor: pointer;
@@ -542,7 +547,7 @@ div > h3 {
     margin: auto;
     display: block;
     width: auto;
-    height: 80%;
+    max-height: 90%;
     max-width: 700px;
 }
 
