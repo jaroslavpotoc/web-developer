@@ -1,13 +1,43 @@
 document.addEventListener('DOMContentLoaded', function() {
     var progressBarElements = document.querySelectorAll('.progress-bar');
+    var animationStarted = false;
 
-    progressBarElements.forEach(function(progressBar) {
-        var progressContent = progressBar.querySelector('.progress-content');
-        var percentage = progressBar.getAttribute('data-percentage');
+    function startAnimation() {
+        if (animationStarted) {
+            return;
+        }
 
-        animateProgress(progressContent, percentage);
-        animateNumberMark(progressBar, percentage);
-    });
+        progressBarElements.forEach(function(progressBar) {
+            var progressContent = progressBar.querySelector('.progress-content');
+            var percentage = progressBar.getAttribute('data-percentage');
+
+            animateProgress(progressContent, percentage);
+            animateNumberMark(progressBar, percentage);
+        });
+
+        animationStarted = true;
+    }
+
+    function isElementInViewport(element) {
+        var rect = element.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+
+    function checkScroll() {
+        progressBarElements.forEach(function(progressBar) {
+            if (isElementInViewport(progressBar)) {
+                startAnimation();
+            }
+        });
+    }
+
+    window.addEventListener('scroll', checkScroll);
+    checkScroll();
 });
 
 function animateProgress(element, targetWidth) {
