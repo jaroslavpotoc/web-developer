@@ -869,7 +869,7 @@ header > .skills {
 .skill-list {
     display: flex;
     flex-direction: row;
-    padding: 0 0 100px 0;
+    padding: 0 0 60px 0;
 }
 
 .abilites {
@@ -887,4 +887,78 @@ header > .skills {
 
 .skill-img {
     margin-left: 80px;
+}
+
+/*-------------BIG MIND--------------*/
+.backgr-img {
+    position: relative;
+    display: inline-block;
+    height: 550px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.overlay-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    object-position: 0 60%;
+    background-color: #121212;
+    opacity: 0.3;
+}
+
+.overlay-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.mind {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 8px 0 16px 0;
+}
+
+.come-on {
+    padding: 18px 40px;
+    background-color: transparent;
+    margin: 40px 0 0 0;
+    border: 2px solid #66fcf1;
+}
+
+.mind-sec {
+    display: flex;
+    flex-direction: column;
+    height: 500px
+}
+
+.come {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Heebo', sans-serif;
+    color: #FCFCFC;
+    font-size: 15px;
+}
+
+.come-on:hover {
+    border: 2px solid #4fc2b9;
+    animation-delay: 0.4s;
+    box-shadow: inset 10px 1px 70px 10px rgba(79,194,185,0.7);
 }
