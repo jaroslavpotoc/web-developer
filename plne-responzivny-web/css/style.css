@@ -389,7 +389,11 @@ header > h2 {
     background-color: #66fcf1;
 }
 
-#turquise > i, p {
+#turquise > i {
+    color: #000000;
+}
+
+#turquise > p {
     color: #000000;
 }
 
@@ -674,6 +678,7 @@ div > h3 {
     justify-content: center;
     align-items: center;
     min-height: 120px;
+    padding: 50px 0 50px 0;
 }
 
 ul {
@@ -964,3 +969,92 @@ header > .skills {
 }
 
 /*-------------FOOTER--------------*/
+
+.main {
+    display: flex;
+    flex-direction: row;
+    padding: 70px 150px 50px 150px;
+}
+
+.fot-logo-disc {
+    flex: 1;
+}
+
+.fot-services {
+    flex: 1;
+    padding-left: 50px;
+}
+
+.fot-speed {
+    flex: 1;
+}
+
+.fot-conta {
+    flex: 1;
+    padding-left: 100px;
+}
+
+.logo-foot {
+    max-width: 100px;
+    max-height: 115px;
+}
+
+.slog > p {
+    padding: 40px 0 0 0;
+    font-family: 'Heebo', sans-serif;
+    font-size: 15px;
+    color: #D0D0D0;
+    font-weight: 300;
+}
+
+.fot-h {
+    font-size: 18px;
+    color: #FCFCFC;
+    margin: 8px 0 16px 0;
+    font-weight: 500;
+}
+
+.fot-text {
+    font-family: 'Heebo', sans-serif;
+    color: #FCFCFC;
+    font-size: 16px;
+    margin: 9px 0 0 0;
+    padding: 0 0 9px 0;
+}
+
+.fot-text > a {
+    text-decoration: none;
+    padding: 0 0 0 12px;
+    color: #FCFCFC;
+    word-break: normal;
+    text-align: center;
+    font-weight: 300;
+}
+
+.fot-text > i {
+    color: #66FCF1;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.fot-text > a:hover {
+    color: #66FCF1;
+}
+
+/*-------------COPYRIGHT--------------*/
+.copy-box {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 14px 0;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.copy-box > p {
+    font-size: 15px;
+    font-family: 'Heebo', sans-serif;
+    color: #D0D0D0;
+    font-weight: 300;
+    text-align: center;
+}
