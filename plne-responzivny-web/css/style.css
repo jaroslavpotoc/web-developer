@@ -3,7 +3,7 @@
 }
 
 html {
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
 }
 
 /*------------ BODY ------------*/
@@ -667,11 +667,6 @@ div > h3 {
 }
 
 /*-------------BUTTOM--------------*/
-
-* {
-    margin: 0;
-    padding: 0;
-}
 
 .soc-an {
     display: flex;
