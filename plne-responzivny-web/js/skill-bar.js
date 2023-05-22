@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     var progressBarElements = document.querySelectorAll('.progress-bar');
     var animationStarted = false;
 
@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
 
-        progressBarElements.forEach(function(progressBar) {
+        progressBarElements.forEach(function (progressBar) {
             var progressContent = progressBar.querySelector('.progress-content');
             var percentage = progressBar.getAttribute('data-percentage');
 
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function checkScroll() {
-        progressBarElements.forEach(function(progressBar) {
+        progressBarElements.forEach(function (progressBar) {
             if (isElementInViewport(progressBar)) {
                 startAnimation();
             }
