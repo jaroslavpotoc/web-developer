@@ -1,6 +1,6 @@
 const gallery = document.getElementById("gallery");
 
-let intervalId; // Globálna premenná pre uchovanie ID intervalu
+let intervalId;
 
 window.addEventListener("scroll", () => {
     const photoGallerySection = document.querySelector(".photo-galery");
@@ -12,7 +12,7 @@ window.addEventListener("scroll", () => {
                 const currentScroll = gallery.scrollLeft;
                 gallery.scrollTo(currentScroll + 2, 0);
 
-                const galleryWidth = gallery.scrollWidth; // Aktualizovať šírku galérie pri každom posune
+                const galleryWidth = gallery.scrollWidth;
 
                 if (currentScroll + 2 >= galleryWidth) {
                     gallery.scrollTo(0, 0);
@@ -25,12 +25,10 @@ window.addEventListener("scroll", () => {
     }
 });
 
-// Počkať na načítanie všetkých obrázkov v galérii
 window.addEventListener("load", () => {
-    const galleryWidth = gallery.scrollWidth; // Výpočet šírky galérie po načítaní všetkých obrázkov
-
-    var modalEle = document.querySelector(".modal");
-    var modalImage = document.querySelector(".modalImage");
+    const galleryWidth = gallery.scrollWidth;
+    const modalEle = document.querySelector(".modal");
+    const modalImage = document.querySelector(".modalImage");
     Array.from(document.querySelectorAll(".pro-gal")).forEach(item => {
         item.addEventListener("click", event => {
             modalEle.style.display = "block";
