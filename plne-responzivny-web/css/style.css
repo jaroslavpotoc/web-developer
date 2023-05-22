@@ -517,6 +517,11 @@ div > h3 {
     max-height: 480px;
 }
 
+.pro-gal:hover {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
 .ImgThumbnail {
     border-radius: 5px;
     cursor: pointer;
