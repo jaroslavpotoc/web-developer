@@ -9,6 +9,8 @@ html {
 /*------------ BODY ------------*/
 body {
     background-color: #000000;
+    margin: 0;
+    padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -91,9 +93,9 @@ span {
 }
 
 /* Add an active class to highlight the current page */
-.active {
+/*.active {
     background-color: #66FCF1;
-}
+}*/
 
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
@@ -216,7 +218,7 @@ span {
     transition: background-color 0.6s ease;
 }
 
-.active {
+.active-slid {
     background-color: #717171;
 }
 
@@ -579,7 +581,7 @@ div > h3 {
 
 .close:hover,
 .close:focus {
-    color: rgb(255, 0, 0);
+    color: rgba(255, 0, 0, 90%);
     cursor: pointer;
 }
 
@@ -1058,3 +1060,255 @@ header > .skills {
     font-weight: 300;
     text-align: center;
 }
+
+/*-------------PORTFOLI GALLERY--------------*/
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container-port {
+    max-width: 1370px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.gallery-port {
+    width: 100%;
+    display: block;
+    min-height: 100vh;
+    background-color: #000000;
+    padding: 0 155px 0 155px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    overflow: auto;
+    line-height: 1.5;
+    font-family: sans-serif;
+}
+
+.gallery-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.gallery-item {
+    width: auto;
+    max-height: 90vh;
+    margin: 0 auto;
+}
+
+.gallery-item img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+}
+
+.gallery-port .gallery-filter {
+    padding: 0 15px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.gallery-port .gallery-filter .filter-item {
+    color: #FCFCFC;
+    font-size: 15px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer;
+    line-height: 1.2;
+    transition: all 0.3s ease;
+}
+
+.gallery-port .gallery-filter .filter-item.active {
+    color: #66FCF1;;
+}
+
+.gallery-port .gallery-filter .filter-item:hover {
+    font-weight: 500;
+    position: relative;
+    padding: 0 7px 0 7px;
+    font-size: 16px;
+    transition: all .3s;
+    color: #66FCF1;
+}
+
+.gallery-port .gallery-item {
+    width: calc(100% / 3);
+    padding: 5px;
+    display: none;
+}
+
+.gallery-port .gallery-item-inner .image-overlay img {
+    transition: opacity 0.9s ease, transform 0.9s ease;
+    cursor: pointer;
+}
+
+.gallery-port .gallery-item-inner .image-overlay:hover img {
+    opacity: 0.5;
+    transform: scale(1.1);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+    cursor: pointer;
+}
+
+.gallery-port .gallery-item-inner .image-overlay {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-port .gallery-item-inner .image-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    color: #FCFCFC;
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    opacity: 0;
+    text-transform: uppercase;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    cursor: pointer;
+}
+
+.gallery-port .gallery-item-inner .image-overlay:hover .image-caption {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.gallery-port .gallery-item-inner img {
+    width: 100%;
+}
+
+.gallery-port .gallery-item.show {
+    display: block;
+}
+
+.gallery-port .gallery-item.hide {
+    display: none;
+}
+
+/* Modal */
+
+.modal-port {
+    display: none;
+    position: fixed;
+    padding-top: 100px;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #FCFCFC;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close:hover {
+    color: rgba(255, 0, 0, 90%);
+    cursor: pointer;
+}
+
+.gallery.fullscreen #galleryModal-port .modal-content .prev,
+.gallery.fullscreen #galleryModal-port .modal-content .next {
+    position: absolute;
+    top: 50%;
+    font-size: 60px;
+    font-weight: bold;
+    color: #FCFCFC;
+    cursor: pointer;
+    transform: translateY(-50%);
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+    z-index: 10;
+}
+
+.gallery.fullscreen #galleryModal-port .modal-content .prev {
+    left: 15px;
+}
+
+.gallery.fullscreen #galleryModal-port .modal-content .next {
+    right: 15px;
+}
+
+i {
+    z-index: 1;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+i:hover {
+    color: #66FCF1;
+}
+
+.next > i {
+    font-size: 50px;
+}
+
+.prev > i {
+    font-size: 50px;
+}
+
+.prev,
+.next {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    pointer-events: auto;
+}
+
+.prev {
+    left: 15px;
+}
+
+.next {
+    right: 15px;
+}
+
+.port-foto {
+    padding: 100px 50px 0px 50px;
+}
+
+

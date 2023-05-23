@@ -1,14 +1,9 @@
-body {
-    line-height: 1.5;
-    font-family: sans-serif;
-}
-
 * {
     margin: 0;
     box-sizing: border-box;
 }
 
-.container {
+.container-port {
     max-width: 1370px;
     margin: auto;
 }
@@ -23,7 +18,7 @@ img {
     vertical-align: middle;
 }
 
-.gallery {
+.gallery-port {
     width: 100%;
     display: block;
     min-height: 100vh;
@@ -36,6 +31,8 @@ img {
     bottom: 0;
     z-index: 999;
     overflow: auto;
+    line-height: 1.5;
+    font-family: sans-serif;
 }
 
 .gallery-content {
@@ -58,14 +55,14 @@ img {
     margin: 0 auto;
 }
 
-.gallery .gallery-filter {
+.gallery-port .gallery-filter {
     padding: 0 15px;
     width: 100%;
     text-align: center;
     margin-bottom: 20px;
 }
 
-.gallery .gallery-filter .filter-item {
+.gallery-port .gallery-filter .filter-item {
     color: white;
     font-size: 15px;
     text-transform: uppercase;
@@ -76,11 +73,11 @@ img {
     transition: all 0.3s ease;
 }
 
-.gallery .gallery-filter .filter-item.active {
+.gallery-port .gallery-filter .filter-item.active {
     color: turquoise;
 }
 
-.gallery .gallery-filter .filter-item:hover {
+.gallery-port .gallery-filter .filter-item:hover {
     font-weight: 500;
     position: relative;
     padding: 0 7px 0 7px;
@@ -89,30 +86,30 @@ img {
     color: turquoise;
 }
 
-.gallery .gallery-item {
+.gallery-port .gallery-item {
     width: calc(100% / 3);
     padding: 5px;
     display: none;
 }
 
-.gallery .gallery-item-inner .image-overlay img {
+.gallery-port .gallery-item-inner .image-overlay img {
     transition: opacity 0.9s ease, transform 0.9s ease;
     cursor: pointer;
 }
 
-.gallery .gallery-item-inner .image-overlay:hover img {
+.gallery-port .gallery-item-inner .image-overlay:hover img {
     opacity: 0.5;
     transform: scale(1.1);
     transition: opacity 0.9s ease, transform 0.9s ease;
     cursor: pointer;
 }
 
-.gallery .gallery-item-inner .image-overlay {
+.gallery-port .gallery-item-inner .image-overlay {
     position: relative;
     overflow: hidden;
 }
 
-.gallery .gallery-item-inner .image-caption {
+.gallery-port .gallery-item-inner .image-caption {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -127,26 +124,26 @@ img {
     cursor: pointer;
 }
 
-.gallery .gallery-item-inner .image-overlay:hover .image-caption {
+.gallery-port .gallery-item-inner .image-overlay:hover .image-caption {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
 }
 
-.gallery .gallery-item-inner img {
+.gallery-port .gallery-item-inner img {
     width: 100%;
 }
 
-.gallery .gallery-item.show {
+.gallery-port .gallery-item.show {
     display: block;
 }
 
-.gallery .gallery-item.hide {
+.gallery-port .gallery-item.hide {
     display: none;
 }
 
 /* Modal */
 
-.modal {
+.modal-port {
     display: none;
     position: fixed;
     padding-top: 100px;
@@ -203,8 +200,8 @@ img {
     }
 }
 
-.gallery.fullscreen #galleryModal .modal-content .prev,
-.gallery.fullscreen #galleryModal .modal-content .next {
+.gallery.fullscreen #galleryModal-port .modal-content .prev,
+.gallery.fullscreen #galleryModal-port .modal-content .next {
     position: absolute;
     top: 50%;
     font-size: 60px;
@@ -217,11 +214,11 @@ img {
     z-index: 10;
 }
 
-.gallery.fullscreen #galleryModal .modal-content .prev {
+.gallery.fullscreen #galleryModal-port .modal-content .prev {
     left: 15px;
 }
 
-.gallery.fullscreen #galleryModal .modal-content .next {
+.gallery.fullscreen #galleryModal-port .modal-content .next {
     right: 15px;
 }
 

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    span {
+      border: 1px solid black;
+      padding: 5px;
+      margin-right: 10px;
+      /* Toto nepojde pre span */
+      /*            width: 100px;
+                  height: 50px;*/
+    }
+
+    .inline-block {
+      display: inline-block;
+      width: 100px;
+      height: 50px;
+    }
+    .block {
+      display: block;
+      width: 100px;
+      height: 50px;
+    }
+    .inline {
+      display: inline;
+    }
+    .none {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+<div>
+  <span>Inline element</span>
+  <span>Inline element</span>
+  <span class="inline-block">Inline-block element</span> <span class="inline-block">Inline-block element</span>
+  <span class="block">Block element</span>
+  <span class="block">Block element</span>
+  <span class="inline">Inline element</span>
+  <span class="inline">Inline element</span>
+  <span class="none">None element</span>
+</div>
+
+</body>
+</html>
