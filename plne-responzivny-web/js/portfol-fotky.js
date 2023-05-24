@@ -1,23 +1,26 @@
-const filterContainer = document.querySelector(".gallery-filter"),
-    galleryItems = document.querySelectorAll(".gallery-item"),
-    modal = document.getElementById("galleryModal-port"),
-    modalImage = document.getElementById("modalImage-port"),
-    closeModalButton = document.querySelector(".close"),
-    prevButton = document.querySelector(".prev"),
-    nextButton = document.querySelector(".next");
+const filterContainer = document.querySelector(".gallery-filter");
+const galleryItems = document.querySelectorAll(".gallery-item");
+const modal = document.getElementById("galleryModal-port");
+const modalImage = document.getElementById("modalImage-port");
+const closeModalButton = document.querySelector(".close-port-fot");
+const prevButton = document.querySelector(".prev");
+const nextButton = document.querySelector(".next");
+const photoCountElement = document.getElementById("photoCount");
 
-let currentImageIndex = 0;
+let currentImageIndex = 1;
 let filteredGalleryItems = [];
+const photoCount = galleryItems.length; // Počet fotiek v galérii
 
 filterContainer.addEventListener("click", (event) => {
     if (event.target.classList.contains("filter-item")) {
         filterContainer.querySelector(".active").classList.remove("active");
         event.target.classList.add("active");
         const filterValue = event.target.getAttribute("data-filter");
-        filteredGalleryItems = Array.from(galleryItems).filter(item =>
-            item.classList.contains(filterValue) || filterValue === "all"
+        filteredGalleryItems = Array.from(galleryItems).filter(
+            (item) => item.classList.contains(filterValue) || filterValue === "all"
         );
         filterImages();
+        updatePhotoCount(); // Aktualizácia počtu fotiek pri zmene filtra
     }
 });
 
@@ -25,9 +28,10 @@ function openModal(element) {
     modal.style.display = "block";
     modalImage.src = element.src;
     document.body.style.overflow = "hidden";
-    currentImageIndex = filteredGalleryItems.findIndex(
-        (item) => item.querySelector("img") === element
-    );
+    currentImageIndex = Array.from(filteredGalleryItems).findIndex(
+        (item) => item.querySelector("img") === element.parentNode
+    ) + 1;
+    updatePhotoCount();
 }
 
 function closeModal() {
@@ -38,22 +42,35 @@ function closeModal() {
 function showImage(index) {
     const image = filteredGalleryItems[index].querySelector("img");
     modalImage.src = image.src;
+    currentImageIndex = index + 1;
+    updatePhotoCount();
 }
 
 function showPreviousImage() {
     currentImageIndex--;
-    if (currentImageIndex < 0) {
-        currentImageIndex = filteredGalleryItems.length - 1;
+    if (currentImageIndex < 1) {
+        currentImageIndex = filteredGalleryItems.length;
     }
-    showImage(currentImageIndex);
+    showImage(currentImageIndex - 1);
 }
 
 function showNextImage() {
     currentImageIndex++;
-    if (currentImageIndex >= filteredGalleryItems.length) {
-        currentImageIndex = 0;
+    if (currentImageIndex > filteredGalleryItems.length) {
+        currentImageIndex = 1;
     }
-    showImage(currentImageIndex);
+    showImage(currentImageIndex - 1);
+}
+
+function updatePhotoCount() {
+    const filteredPhotoCount = filteredGalleryItems.length;
+    const photoCountText = `${currentImageIndex}/${filteredPhotoCount}`;
+    photoCountElement.textContent = photoCountText;
+
+    const closeButton = document.querySelector(".close-port-fot");
+    if (closeButton) {
+        closeButton.style.left = `calc(100% + 10px)`;
+    }
 }
 
 closeModalButton.addEventListener("click", closeModal);
@@ -72,17 +89,16 @@ window.addEventListener("DOMContentLoaded", () => {
 
     filteredGalleryItems = Array.from(galleryItems);
     filterImages();
+    updatePhotoCount(); // Zavoláme funkciu na aktualizáciu počtu fotiek
 });
 
 function filterImages() {
-    galleryItems.forEach((item) => {
+    galleryItems.forEach((item, index) => {
         if (filteredGalleryItems.includes(item)) {
             item.style.display = "block";
         } else {
             item.style.display = "none";
         }
+        item.dataset.index = index + 1; // Nastavenie dataset atribútu pre index fotky
     });
 }
-
-
-

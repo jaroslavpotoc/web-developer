@@ -187,6 +187,11 @@
         display: block;
     }
 
+    .column-port {
+        flex: 50%; /* Zmena: 50% pre tablety */
+        max-width: 50%; /* Zmena: 50% pre tablety */
+    }
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -374,5 +379,12 @@
 
     .gallery .gallery-filter .filter-item {
         margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .column-port {
+        flex: 33.33%; /* Zmena: 33.33% pre počítače a notebooky */
+        max-width: 33.33%; /* Zmena: 33.33% pre počítače a notebooky */
     }
 }
