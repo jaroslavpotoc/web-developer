@@ -35,7 +35,7 @@ window.addEventListener("load", () => {
             modalImage.src = event.target.src;
         });
     });
-    document.querySelector(".close").addEventListener("click", () => {
+    document.querySelector(".close-proj").addEventListener("click", () => {
         modalEle.style.display = "none";
     });
 });

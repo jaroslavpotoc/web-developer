@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 html {
@@ -1048,10 +1049,6 @@ header > .skills {
 }
 
 /*-------------PORTFOLI GALLERY--------------*/
-* {
-    margin: 0;
-    box-sizing: border-box;
-}
 /*----row----*/
 .container-port {
     max-width: 1370px;
@@ -1149,22 +1146,88 @@ header > .skills {
     overflow: hidden;
 }
 
-.gallery-port .gallery-item-inner .image-caption {
+.gallery-port .gallery-item-inner .image-caption-h {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 91%;
+    left: 45%;
     transform: translate(-50%, -50%) scale(0.8);
     color: #FCFCFC;
-    font-size: 18px;
-    text-align: center;
+    font-size: 15px;
+    text-align: right;
     width: 100%;
     opacity: 0;
     text-transform: uppercase;
     transition: opacity 0.4s ease, transform 0.4s ease;
     cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
 }
 
-.gallery-port .gallery-item-inner .image-overlay:hover .image-caption {
+.gallery-port .gallery-item-inner .image-text-h {
+    position: absolute;
+    top: 94%;
+    left: 45%;
+    transform: translate(-50%, -50%) scale(0.8);
+    color: #FCFCFC;
+    font-size: 15px;
+    text-align: right;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+}
+
+.gallery-port .gallery-item-inner .image-overlay:hover .image-text-h  {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.gallery-port .gallery-item-inner .image-overlay:hover .image-caption-h  {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.gallery-port .gallery-item-inner .image-caption-w {
+    position: absolute;
+    top: 80%;
+    left: 45%;
+    transform: translate(-50%, -50%) scale(0.8);
+    color: #FCFCFC;
+    font-size: 15px;
+    text-align: right;
+    width: 100%;
+    opacity: 0;
+    text-transform: uppercase;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.gallery-port .gallery-item-inner .image-text-w {
+    position: absolute;
+    top: 88%;
+    left: 45%;
+    transform: translate(-50%, -50%) scale(0.8);
+    color: #FCFCFC;
+    font-size: 15px;
+    text-align: right;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+}
+
+.gallery-port .gallery-item-inner .image-overlay:hover .image-text-w  {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.gallery-port .gallery-item-inner .image-overlay:hover .image-caption-w  {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
 }
