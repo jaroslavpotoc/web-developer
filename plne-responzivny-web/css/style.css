@@ -345,6 +345,7 @@ header > h2 {
     font-weight: 700;
     margin: 0;
     text-transform: uppercase;
+    max-width: 800px;
 }
 
 .con-look {
@@ -1385,3 +1386,59 @@ i:hover {
     right: 35px;
 }
 /*-------------VIDEO GALLERY--------------*/
+
+.port-video {
+    padding: 100px 50px 0 50px;
+}
+.video-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.video-column {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+iframe {
+    width: 580px;
+    height: 300px;
+}
+/*-------------Services-fotoprodukcia--------------*/
+
+.port-btn {
+    padding: 18px 40px;
+    background-color: transparent;
+    margin: 25px 0 0 0;
+    border: 2px solid #66fcf1;
+}
+
+.port-btn:hover {
+    border: 2px solid #4fc2b9;
+    animation-delay: 0.4s;
+    box-shadow: inset 10px 1px 70px 10px rgba(79, 194, 185, 0.7);
+}
+
+.port-txt {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Heebo', sans-serif;
+    color: #FCFCFC;
+    font-size: 15px;
+}
+
+.port-txt > i {
+    margin-left: 5px;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.services-btn {
+    max-height: 72px;
+    position: absolute;
+    top: 21%;
+    right: 15%;
+
+}
