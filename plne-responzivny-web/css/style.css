@@ -1440,5 +1440,90 @@ iframe {
     position: absolute;
     top: 21%;
     right: 15%;
+}
 
+/*-------------404 / 403 ERROR--------------*/
+.not-found {
+    height: 200px;
+    margin-bottom: 150px;
+    padding-left: 50px;
+}
+.wrapper-not-found {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    background-color: #000;
+    bottom: 200px;
+    text-decoration: none;
+}
+
+.button-not-found {
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #66FCF1;
+    font-size: 1.2rem;
+    font-weight: 300;
+    transition: .9s;
+    overflow: hidden;
+    margin-right: 70px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.button-not-found:hover {
+    background-color: #66FCF1;
+    color: #050801;
+    box-shadow: 0 0 5px #66FCF1,
+    0 0 25px #66FCF1,
+    0 0 50px #66FCF1,
+    0 0 200px #66FCF1;
+}
+
+.button-not-found span {
+    position: absolute;
+    display: block;
+}
+
+.button-not-found span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #66FCF1);
+    animation: animate1 1s infinite;
+}
+
+.button-not-found span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #66FCF1);
+    animation: animate2 1s infinite;
+    animation-delay: .25s;
+}
+
+.button-not-found span:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #66FCF1);
+    animation: animate3 1s infinite;
+    animation-delay: .5s;
+}
+
+.button-not-found span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #66FCF1);
+    animation: animate4 1s infinite;
+    animation-delay: .75s;
 }
