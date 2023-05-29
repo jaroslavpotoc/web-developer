@@ -1527,3 +1527,95 @@ iframe {
     animation: animate4 1s infinite;
     animation-delay: .75s;
 }
+
+/*-------------SERVICES MENU--------------*/
+.con-look-ser {
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 20px 0 55px 0;
+    padding-left: 125px;
+}
+
+.content-ser-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.content-ser-1 > div {
+    background-color: #000000;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    max-height: 500px;
+    max-width: 370px;
+    padding: 15px;
+}
+
+.content-ser-1 > div:hover {
+    border-bottom: 4px solid #66FCF1;
+    transition: 0.3s;
+}
+
+.content-ser-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.content-ser-2 > div {
+    background-color: #000000;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    max-height: 500px;
+    max-width: 370px;
+    padding: 15px;
+}
+
+.content-ser-2 > div:hover {
+    border-bottom: 4px solid #66FCF1;
+    transition: 0.3s;
+}
+
+.content-ser-3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.content-ser-3 > div {
+    background-color: #000000;
+    margin: 10px 780px 0 0;
+    text-align: center;
+    line-height: 75px;
+    max-height: 500px;
+    max-width: 370px;
+    padding: 15px;
+}
+
+.content-ser-3 > div:hover {
+    border-bottom: 4px solid #66FCF1;
+    transition: 0.3s;
+}
+
+#con-ser-icon1, #con-ser-icon2, #con-ser-icon3,
+#con-ser-icon4, #con-ser-icon5, #con-ser-icon6,
+#con-ser-icon7 {
+    font-size: 40px;
+    text-align: left;
+    color: #66FCF1;
+    display: block;
+    margin: 22px 40px 12px 40px;
+
+}
+
+.con-ser-p {
+    font-size: 15px;
+    margin: 16px 40px;
+    padding: 10px 0 20px 0;
+    text-align: left;
+    line-height: 20px;
+    font-weight: 300;
+    color: #D0D0D0;
+}
