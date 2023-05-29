@@ -1540,6 +1540,7 @@ iframe {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-top: 100px;
 }
 
 .content-ser-1 > div {
@@ -1618,4 +1619,26 @@ iframe {
     line-height: 20px;
     font-weight: 300;
     color: #D0D0D0;
+}
+
+.content-ser-line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.content-ser-line > div {
+    background-color: #000000;
+    margin-top: 10px;
+    border-right: 2px solid #66FCF1;
+    height: 50px;
+}
+
+
+/*-------------FAQ MENU--------------*/
+
+.faq {
+    background-color: #0B0C10;
+    height: 828px;
 }
