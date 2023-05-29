@@ -1540,6 +1540,7 @@ iframe {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-top: 100px;
 }
 
 .content-ser-1 > div {
@@ -1618,4 +1619,91 @@ iframe {
     line-height: 20px;
     font-weight: 300;
     color: #D0D0D0;
+}
+
+.content-ser-line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.content-ser-line > div {
+    background-color: #000000;
+    margin-top: 10px;
+    border-right: 2px solid #66FCF1;
+    height: 50px;
+}
+
+
+/*-------------FAQ MENU--------------*/
+
+.faq {
+    background-color: #0B0C10;
+    max-height: 854px;
+}
+
+.faq-cointainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.faq-photo {
+    display: flex;
+    flex-direction: column;
+    flex: 2 2;
+    padding: 100px 0 100px 100px;
+}
+
+.faq-content {
+    display: flex;
+    flex-direction: column;
+    flex: 2 2;
+    padding: 100px 100px 100px 0;
+}
+
+.faq-photo img {
+    height: 100%;
+    width: 100%;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.menu-1, .menu-2, .menu-3 {
+    padding-left: 125px;
 }
