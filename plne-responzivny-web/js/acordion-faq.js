@@ -7,27 +7,25 @@ for (i = 0; i < acc.length; i++) {
         var panel = this.nextElementSibling;
         var isActive = panel.classList.contains("active");
 
-        // Zatvorí všetky otvorené panely okrem vybraného
+        // Zatvorí všetky otvorené panely
         for (var j = 0; j < panels.length; j++) {
-            if (panels[j] !== panel) {
-                panels[j].style.maxHeight = null;
-                panels[j].classList.remove("active");
-            }
+            panels[j].style.maxHeight = null;
+            panels[j].classList.remove("active");
+            acc[j].classList.remove("active");
         }
 
-        // Otvorí alebo zatvorí vybraný panel s animáciou
-        if (isActive) {
-            panel.style.maxHeight = null;
-            panel.classList.remove("active");
-        } else {
+        // Ak panel nie je aktívny, otvorí ho a pridá triedy "active"
+        if (!isActive) {
             panel.style.maxHeight = panel.scrollHeight + "px";
             panel.classList.add("active");
+            this.classList.add("active");
         }
     });
-}
 
-// Otvorí panel 3 pri načítaní stránky
-if (panels.length > 0) {
-    panels[2].style.maxHeight = panels[2].scrollHeight + "px";
-    panels[2].classList.add("active");
+    // Aktivuje prvý panel pri načítaní stránky
+    if (i === 0) {
+        panels[i].style.maxHeight = panels[i].scrollHeight + "px";
+        acc[i].classList.add("active");
+        panels[i].classList.add("active");
+    }
 }
