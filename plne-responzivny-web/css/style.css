@@ -571,6 +571,7 @@ div > h3 {
 .close-proj:focus {
     color: rgba(255, 0, 0, 90%);
     cursor: pointer;
+    transition: 0.4s;
 }
 
 
@@ -615,6 +616,7 @@ div > h3 {
     0 0 25px #66FCF1,
     0 0 50px #66FCF1,
     0 0 200px #66FCF1;
+    transition: 0.4s;
 }
 
 .button-gen span {
@@ -662,7 +664,6 @@ div > h3 {
 }
 
 /*-------------BUTTOM--------------*/
-
 .soc-an {
     display: flex;
     justify-content: center;
@@ -671,13 +672,13 @@ div > h3 {
     padding: 50px 0 50px 0;
 }
 
-ul {
+.soc-an ul {
     position: relative;
     display: flex;
     transform-style: preserve-3d;
 }
 
-ul li {
+.soc-an ul li {
     position: relative;
     list-style: none;
     width: 40px;
@@ -685,7 +686,7 @@ ul li {
     margin: 0 20px;
 }
 
-ul li::before {
+.soc-an ul li::before {
     content: '';
     position: absolute;
     bottom: -10px;
@@ -696,7 +697,7 @@ ul li::before {
     transform: skewX(-41deg);
 }
 
-ul li::after {
+.soc-an ul li::after {
     content: '';
     position: absolute;
     top: 5px;
@@ -707,7 +708,7 @@ ul li::after {
     transform: skewY(-49deg);
 }
 
-ul li span {
+.soc-an ul li span {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -720,56 +721,66 @@ ul li span {
     padding: 10px 10px 10px 10px;
 }
 
-ul li:hover span {
+.soc-an ul li:hover span {
     z-index: 1000;
     transition: .3s;
     color: #fff;
     box-shadow: -1px 1px 1px rgba(0, 0, 0, .5);
 }
 
-ul li:hover span:nth-child(5) {
+.soc-an ul li:hover span:nth-child(5) {
     transform: translate(40px, -40px);
     opacity: 1;
+    transition: 0.4s;
 }
 
-ul li:hover span:nth-child(4) {
+.soc-an ul li:hover span:nth-child(4) {
     transform: translate(30px, -30px);
     opacity: .8;
+    transition: 0.4s;
 }
 
-ul li:hover span:nth-child(3) {
+.soc-an ul li:hover span:nth-child(3) {
     transform: translate(20px, -20px);
     opacity: .6;
+    transition: 0.4s;
 }
 
-ul li:hover span:nth-child(2) {
+.soc-an ul li:hover span:nth-child(2) {
     transform: translate(10px, -10px);
     opacity: .4;
+    transition: 0.4s;
 }
 
-ul li:hover span:nth-child(1) {
+.soc-an ul li:hover span:nth-child(1) {
     transform: translate(0, 0);
     opacity: .2;
+    transition: 0.4s;
 }
 
-ul li:nth-child(1):hover span {
+.soc-an ul li:nth-child(1):hover span {
     background: #3b79a0;
+    transition: 0.4s;
 }
 
-ul li:nth-child(2):hover span {
+.soc-an ul li:nth-child(2):hover span {
     background: #cf5c80;
+    transition: 0.4s;
 }
 
-ul li:nth-child(3):hover span {
+.soc-an ul li:nth-child(3):hover span {
     background: #cf5c60;
+    transition: 0.4s;
 }
 
-ul li:nth-child(4):hover span {
+.soc-an ul li:nth-child(4):hover span {
     background: #3a7933;
+    transition: 0.4s;
 }
 
-ul li:nth-child(5):hover span {
+.soc-an ul li:nth-child(5):hover span {
     background: #7a7c7a;
+    transition: 0.4s;
 }
 
 /*-------------SKILL LIST--------------*/
@@ -956,6 +967,7 @@ header > .skills {
     border: 2px solid #4fc2b9;
     animation-delay: 0.4s;
     box-shadow: inset 10px 1px 70px 10px rgba(79, 194, 185, 0.7);
+    transition: 0.4s;
 }
 
 /*-------------FOOTER--------------*/
@@ -1029,6 +1041,7 @@ header > .skills {
 
 .fot-text > a:hover {
     color: #66FCF1;
+    transition: 0.4s;
 }
 
 /*-------------COPYRIGHT--------------*/
@@ -1183,11 +1196,13 @@ header > .skills {
 .gallery-port .gallery-item-inner .image-overlay:hover .image-text-h  {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
+    transition: 0.4s;
 }
 
 .gallery-port .gallery-item-inner .image-overlay:hover .image-caption-h  {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
+    transition: 0.4s;
 }
 
 .gallery-port .gallery-item-inner .image-caption-w {
@@ -1226,11 +1241,13 @@ header > .skills {
 .gallery-port .gallery-item-inner .image-overlay:hover .image-text-w  {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
+    transition: 0.4s;
 }
 
 .gallery-port .gallery-item-inner .image-overlay:hover .image-caption-w  {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
+    transition: 0.4s;
 }
 
 .gallery-port .gallery-item-inner img {
@@ -1287,6 +1304,7 @@ header > .skills {
 .close-port-fot:hover {
     color: rgba(255, 0, 0, 90%);
     cursor: pointer;
+    transition: 0.4s;
 }
 
 .gallery.fullscreen #galleryModal-port .modal-content .prev,
@@ -1320,6 +1338,7 @@ i {
 
 i:hover {
     color: #66FCF1;
+    transition: 0.4s;
 }
 
 .next > i {
@@ -1413,12 +1432,14 @@ iframe {
     background-color: transparent;
     margin: 25px 0 0 0;
     border: 2px solid #66fcf1;
+    transition: 0.4s;
 }
 
 .port-btn:hover {
     border: 2px solid #4fc2b9;
     animation-delay: 0.4s;
     box-shadow: inset 10px 1px 70px 10px rgba(79, 194, 185, 0.7);
+    transition: 0.4s;
 }
 
 .port-txt {
@@ -1482,6 +1503,7 @@ iframe {
     0 0 25px #66FCF1,
     0 0 50px #66FCF1,
     0 0 200px #66FCF1;
+    transition: 0.4s;
 }
 
 .button-not-found span {
@@ -1749,6 +1771,7 @@ iframe {
 .activefaq, .accordion:hover {
     background-color: #121212;
     border: 1px solid #66fcf1;
+    transition: 0.4s;
 }
 
 .accordion:after {
@@ -1858,3 +1881,201 @@ ol li {
 }
 
 /*-------------PRICE LIST-------------*/
+
+.content-price-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 50px;
+    margin: 0 110px 0 110px ;
+}
+
+.content-price-2, .content-price-3,
+.content-price-4, .content-price-5 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 25px;
+    margin: 0 110px 0 110px ;
+}
+
+.content-price-1 > div {
+    background-color: #121212;
+    padding: 30px;
+    margin: 24px;
+    flex: 1 3;
+}
+
+.content-price-2 > div {
+    background-color: #121212;
+    padding: 30px;
+    margin: 24px;
+    flex: 1 3;
+}
+
+.content-price-3 > div {
+    background-color: #121212;
+    padding: 30px;
+    margin: 24px;
+    flex: 1 3;
+}
+
+.content-price-4 > div {
+    background-color: #121212;
+    padding: 30px;
+    margin: 24px;
+    flex: 1 3;
+}
+
+.content-price-5 > div {
+    background-color: #121212;
+    padding: 30px;
+    margin: 24px;
+    flex: 1 3;
+}
+
+.content-price-1 > div:hover {
+    border: 2px solid #66fcf1;
+    transition: 0.4s;
+}
+
+.content-price-2 > div:hover {
+    border: 2px solid #66fcf1;
+    transition: 0.4s;
+}
+
+.content-price-3 > div:hover {
+    border: 2px solid #66fcf1;
+    transition: 0.4s;
+}
+
+.content-price-4 > div:hover {
+    border: 2px solid #66fcf1;
+    transition: 0.4s;
+}
+
+.content-price-5 > div:hover {
+    border: 2px solid #66fcf1;
+    transition: 0.4s;
+}
+
+.content-price-1 h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    color: #FCFCFC;
+    text-transform: uppercase;
+    font-weight: 600;
+    max-width: 293px;
+}
+
+.content-price-2 h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    color: #FCFCFC;
+    text-transform: uppercase;
+    font-weight: 600;
+    max-width: 293px;
+}
+
+.content-price-3 h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    color: #FCFCFC;
+    text-transform: uppercase;
+    font-weight: 600;
+    max-width: 293px;
+}
+
+.content-price-4 h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    color: #FCFCFC;
+    text-transform: uppercase;
+    font-weight: 600;
+    max-width: 293px;
+}
+
+.content-price-5 h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    color: #FCFCFC;
+    text-transform: uppercase;
+    font-weight: 600;
+    max-width: 293px;
+}
+
+.min-order {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: #66fcf1;
+    text-transform: uppercase;
+    font-weight: 300;
+    max-width: 293px;
+    margin-top: 24px;
+}
+
+.order-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #FCFCFC;
+    font-weight: 500;
+    max-width: 293px;
+    margin-top: 24px;
+}
+
+.content-price-1 hr {
+    margin-top: 24px;
+    opacity: 0.4;
+}
+
+.content-price-2 hr {
+    margin-top: 24px;
+    opacity: 0.4;
+}
+
+.content-price-3 hr {
+    margin-top: 24px;
+    opacity: 0.4;
+}
+
+.content-price-4 hr {
+    margin-top: 24px;
+    opacity: 0.4;
+}
+
+.content-price-5 hr {
+    margin-top: 24px;
+    opacity: 0.4;
+}
+
+.price-info {
+    margin-top: 24px;
+}
+
+.price-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: #FCFCFC;
+    font-weight: 300;
+}
+
+.price-eur {
+    font-family: 'Heebo', sans-serif;
+    font-size: 15px;
+    color: #FCFCFC;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 12px 0 10px 0;
+}
+
+.btn-price {
+    margin-top: 24px;
+    background-color: #000000;
+    height: 47px;
+    text-align: center;
+}
+
+.btn-price:hover {
+    border: 2px solid #66fcf1;
+    transition: 0.4s;
+}
