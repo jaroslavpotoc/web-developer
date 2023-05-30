@@ -1193,13 +1193,13 @@ header > .skills {
     font-weight: 200;
 }
 
-.gallery-port .gallery-item-inner .image-overlay:hover .image-text-h  {
+.gallery-port .gallery-item-inner .image-overlay:hover .image-text-h {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
     transition: 0.4s;
 }
 
-.gallery-port .gallery-item-inner .image-overlay:hover .image-caption-h  {
+.gallery-port .gallery-item-inner .image-overlay:hover .image-caption-h {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
     transition: 0.4s;
@@ -1238,13 +1238,13 @@ header > .skills {
     font-weight: 200;
 }
 
-.gallery-port .gallery-item-inner .image-overlay:hover .image-text-w  {
+.gallery-port .gallery-item-inner .image-overlay:hover .image-text-w {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
     transition: 0.4s;
 }
 
-.gallery-port .gallery-item-inner .image-overlay:hover .image-caption-w  {
+.gallery-port .gallery-item-inner .image-overlay:hover .image-caption-w {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
     transition: 0.4s;
@@ -1404,11 +1404,13 @@ i:hover {
     top: 10px;
     right: 35px;
 }
+
 /*-------------VIDEO GALLERY--------------*/
 
 .port-video {
     padding: 100px 50px 0 50px;
 }
+
 .video-row {
     display: flex;
     flex-wrap: wrap;
@@ -1425,6 +1427,7 @@ iframe {
     width: 580px;
     height: 300px;
 }
+
 /*-------------Services-fotoprodukcia--------------*/
 
 .port-btn {
@@ -1469,6 +1472,7 @@ iframe {
     margin-bottom: 150px;
     padding-left: 50px;
 }
+
 .wrapper-not-found {
     display: flex;
     justify-content: center;
@@ -1692,12 +1696,15 @@ iframe {
 .content-ser-1 h3 {
     line-height: 25px;
 }
+
 .content-ser-2 h3 {
     line-height: 25px;
 }
+
 .content-ser-3 h3 {
     line-height: 25px;
 }
+
 .content-ser-4 h3 {
     line-height: 25px;
 }
@@ -1887,7 +1894,7 @@ ol li {
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 50px;
-    margin: 0 110px 0 110px ;
+    margin: 0 110px 0 110px;
 }
 
 .content-price-2, .content-price-3,
@@ -1896,7 +1903,7 @@ ol li {
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 25px;
-    margin: 0 110px 0 110px ;
+    margin: 0 110px 0 110px;
 }
 
 .content-price-1 > div {
