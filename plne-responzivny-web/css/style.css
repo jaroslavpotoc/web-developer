@@ -1587,7 +1587,7 @@ iframe {
 
 .content-ser-3 > div {
     background-color: #000000;
-    margin: 10px 780px 0 0;
+    margin: 10px;
     text-align: center;
     line-height: 75px;
     max-height: 500px;
@@ -1600,9 +1600,31 @@ iframe {
     transition: 0.3s;
 }
 
+.content-ser-4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.content-ser-4 > div {
+    background-color: #000000;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    max-height: 500px;
+    max-width: 370px;
+    padding: 15px;
+}
+
+.content-ser-4 > div:hover {
+    border-bottom: 4px solid #66FCF1;
+    transition: 0.3s;
+}
+
 #con-ser-icon1, #con-ser-icon2, #con-ser-icon3,
 #con-ser-icon4, #con-ser-icon5, #con-ser-icon6,
-#con-ser-icon7 {
+#con-ser-icon7, #con-ser-icon8, #con-ser-icon9,
+#con-ser-icon10, #con-ser-icon11, #con-ser-icon12 {
     font-size: 40px;
     text-align: left;
     color: #66FCF1;
@@ -1635,6 +1657,33 @@ iframe {
     height: 50px;
 }
 
+.spacer-div {
+    width: 370px;
+    height: 300px;
+    background-color: #000000;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    padding: 15px;
+}
+
+.content-ser-1 h3 {
+    line-height: 25px;
+}
+.content-ser-2 h3 {
+    line-height: 25px;
+}
+.content-ser-3 h3 {
+    line-height: 25px;
+}
+.content-ser-4 h3 {
+    line-height: 25px;
+}
+
+.spacer2 {
+    display: block;
+    height: 8px;
+}
 
 /*-------------FAQ MENU--------------*/
 
@@ -1758,4 +1807,10 @@ iframe {
 .menu-1, .menu-2, .menu-3 {
     padding-left: 125px;
     margin-bottom: 20px;
+}
+.con-look-ser-faq {
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 20px 0 20px 0;
+    padding-left: 125px;
 }
