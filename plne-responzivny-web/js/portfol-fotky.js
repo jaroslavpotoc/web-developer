@@ -9,7 +9,7 @@ const photoCountElement = document.getElementById("photoCount");
 
 let currentImageIndex = 1;
 let filteredGalleryItems = [];
-const photoCount = galleryItems.length; // Počet fotiek v galérii
+const photoCount = galleryItems.length;
 
 filterContainer.addEventListener("click", (event) => {
     if (event.target.classList.contains("filter-item")) {
@@ -20,7 +20,7 @@ filterContainer.addEventListener("click", (event) => {
             (item) => item.classList.contains(filterValue) || filterValue === "all"
         );
         filterImages();
-        updatePhotoCount(); // Aktualizácia počtu fotiek pri zmene filtra
+        updatePhotoCount();
     }
 });
 
@@ -89,7 +89,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     filteredGalleryItems = Array.from(galleryItems);
     filterImages();
-    updatePhotoCount(); // Zavoláme funkciu na aktualizáciu počtu fotiek
+    updatePhotoCount();
 });
 
 function filterImages() {
@@ -99,6 +99,6 @@ function filterImages() {
         } else {
             item.style.display = "none";
         }
-        item.dataset.index = index + 1; // Nastavenie dataset atribútu pre index fotky
+        item.dataset.index = index + 1;
     });
 }

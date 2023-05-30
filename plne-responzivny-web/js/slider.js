@@ -1,4 +1,3 @@
-/* Slider */
 let slideIndex = 0;
 showSlides();
 
@@ -18,5 +17,5 @@ function showSlides() {
     }
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active-slid";
-    setTimeout(showSlides, 2500); // Change images every 2 seconds
+    setTimeout(showSlides, 2500);
 }

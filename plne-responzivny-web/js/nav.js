@@ -1,5 +1,3 @@
-/* Nav bar responsive hamburger */
-
 function myFunction() {
     const x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
