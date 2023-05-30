@@ -1808,9 +1808,51 @@ iframe {
     padding-left: 125px;
     margin-bottom: 20px;
 }
+
 .con-look-ser-faq {
     text-transform: uppercase;
     font-weight: 500;
     margin: 20px 0 20px 0;
     padding-left: 125px;
+}
+
+/*-------------GDPR / COOKIES-------------*/
+.services-gdpr {
+    padding: 100px 50px 0 50px;
+}
+
+.gdpr {
+    padding: 0 175px 100px 175px;
+}
+
+.privacy-policy-p {
+    font-size: 15px;
+    text-align: left;
+    line-height: 20px;
+    font-weight: 300;
+    color: #D0D0D0;
+    font-family: 'Heebo', sans-serif;
+    word-break: keep-all;
+}
+
+.privacy-policy-ol {
+    padding: 0;
+    color: #D0D0D0;
+}
+
+ol li {
+    color: #FCFCFC;
+    font-family: 'Poppins', sans-serif;
+}
+
+.privacy-policy-ol li {
+    margin-left: 18px;
+}
+
+.services-cookie {
+    padding: 100px 50px 0 50px;
+}
+
+.cookie {
+    padding: 0 175px 100px 175px;
 }
