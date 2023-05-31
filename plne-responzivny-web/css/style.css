@@ -1921,6 +1921,17 @@ ol li {
     border: 2px solid #121212;
 }
 
+.block-gray:hover {
+    border: 2px solid #66fcf1;
+    transition: 0.4s;
+}
+
+.block-black:hover {
+    border: 2px solid #66fcf1;
+    transition: 0.4s;
+
+}
+
 .content-price-2 > div {
     padding: 40px 20px 40px 20px;
     margin: 24px;
@@ -1943,31 +1954,6 @@ ol li {
     padding: 40px 20px 40px 20px;
     margin: 24px;
     flex: 1 3;
-}
-
-.content-price-1 > div:hover {
-    border: 2px solid #66fcf1;
-    transition: 0.4s;
-}
-
-.content-price-2 > div:hover {
-    border: 2px solid #66fcf1;
-    transition: 0.4s;
-}
-
-.content-price-3 > div:hover {
-    border: 2px solid #66fcf1;
-    transition: 0.4s;
-}
-
-.content-price-4 > div:hover {
-    border: 2px solid #66fcf1;
-    transition: 0.4s;
-}
-
-.content-price-5 > div:hover {
-    border: 2px solid #66fcf1;
-    transition: 0.4s;
 }
 
 .content-price-1 h2 {
