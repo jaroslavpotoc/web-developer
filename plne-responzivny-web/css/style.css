@@ -2108,6 +2108,13 @@ ol li {
     transition: 0.4s;
 }
 
+.btn-price-transparent {
+    margin-top: 24px;
+    background-color: #000000;
+    height: 47px;
+    text-align: center;
+}
+
 .spacer-price-text {
     display: block;
     height: 35px;
