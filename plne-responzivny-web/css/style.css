@@ -2373,7 +2373,27 @@ ol li {
 .container-cv {
     display: flex;
     flex-direction: row;
+    flex: 1 2;
     padding-left: 110px;
+}
+
+photo-team {
+    display: flex;
+    flex-direction: column;
+    flex: 1 2;
+    padding-left: 110px;
+}
+
+.about-team {
+    display: flex;
+    flex-direction: column;
+    flex: 1 2;
+    padding: 0 110px 0 110px;
+    height: 20px;
+}
+.about-born {
+    display: flex;
+    flex-direction: column;
 }
 
 .team-img img {
@@ -2461,3 +2481,20 @@ ol li {
     color: #FCFCFC;
     background-color: #121212;
 }
+
+/*-------------SKILL BAR--------------*/
+
+.container-skill-2 {
+    height: 75%;
+    width: 75%;
+    margin: 0 0 40px 125px;
+    line-height: 30px;
+}
+
+.skill-list-2 {
+    display: flex;
+    flex-direction: column;
+    flex: 1 2;
+    padding: 0 0 60px 0;
+}
+
