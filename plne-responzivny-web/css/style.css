@@ -2389,13 +2389,15 @@ ol li {
     overflow: hidden;
 }
 .team-title {
-    margin: 140px 0 7px;
+    margin: 140px 0 0 30px;
+    text-align: center;
 }
 
 .span-team {
     color: #66FCF1;
     font-family: 'Poppins', sans-serif;
-    margin: 140px 0 7px;
+    text-align: center;
+    margin: 140px 0 0 120px;
 }
 
 .overlay {
@@ -2429,12 +2431,15 @@ ol li {
     opacity: 1;
 }
 
+.socials {
+    margin: 10px 0 0 70px;
+}
+
 .socials a {
     display: inline-block;
     width: 37px;
     height: 37px;
     background-color: transparent;
-    justify-content: center;
 }
 
 .socials i {
