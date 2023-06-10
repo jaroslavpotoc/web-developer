@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+<section class="services-container">
+    <header class="headline-conta">
+        <h2>Pošlite nám správu!</h2>
+    </header>
+    <div class="con-look-conta">
+        <span class="span-con">V prípade otázok nás môžete kontaktovať cez tento formulár</span>
+    </div>
+</section>
+<section class="form">
+    <div class="form-row">
+        <form action="#" id="#" method="get">
+            <div class="form-wrap">
+                <label for="name">
+                    <input type="text" id="name" name="name" placeholder="Meno" maxlength="64" required>
+                </label>
+                <label for="lastname">
+                    <input type="text" id="lastname" name="lastname" placeholder="Priezvisko" maxlength="64" required>
+                </label>
+                <label for="email">
+                    <input type="text" id="email" name="email" placeholder="E - mail" maxlength="64" pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" required>
+                </label>
+                <label for="subject">
+                    <input type="text" id="subject" name="subject" placeholder="Predmet" maxlength="64" required>
+                </label>
+            </div>
+            <div class="form-wrap">
+                <label for="services">
+                    <select id="services" name="services" required>
+                        <option value="servicer">Výber si službu...</option>
+                        <option value="foto-production">Foto produkcia</option>
+                        <option value="video-production">Video produkcia</option>
+                        <option value="graphic-design">Grafický dizajn</option>
+                        <option value="wordpress-web">Wordpress web</option>
+                        <option value="domain-hosting-managment">Správa domény a hostingu</option>
+                        <option value="digital-strategy">Digitálna stratégia</option>
+                        <option value="other">Iné..</option>
+                    </select>
+                </label>
+            </div>
+            <div class="form-wrap">
+                <label for="message">
+            <textarea id="message" name="message" placeholder="Vaša správa..." minlength="5" maxlength="700"
+                      required></textarea>
+                </label>
+            </div>
+            <div>
+                <label for="chceckbox">
+                    <input id="chceckbox" name="message" type="checkbox" required><a href="gdpr.html">Súhlasim s GDPR</a>
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input class="submit-btn" onclick="toastFunction(event)" type="submit" name="submit" value="ODOSLAŤ">
+                </label>
+            </div>
+        </form>
+    </div>
+    <div id="toast">
+        <div class="checkicon"></div>
+        ÚSPECH: Dostali sme vašu správu. Vďaka!
+    </div>
+</section>
+</body>
+</html>
