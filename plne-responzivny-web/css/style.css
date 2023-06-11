@@ -2493,7 +2493,7 @@ ol li {
 
 /*-------------CONTACT--------------*/
 .services-conta {
-    padding: 100px 50px 100px 50px;
+    padding: 100px 50px 0 50px;
 }
 
 .headline-conta {
@@ -2576,29 +2576,58 @@ ol li {
 
 .form #name, #lastname,
  #email, #subject {
-    min-width: 500px;
-    min-height: 50px;
+    min-width: 555px;
+    min-height: 65px;
     background-color: #252525;
     border: none;
-    margin: 10px;
+    margin: 20px;
+    padding: 15px;
+    color: #FCFCFC;
+    font-family: 'Heebo', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
 }
 
 .form #services {
-    min-width: 1020px;
-    min-height: 50px;
+    min-width: 1150px;
+    min-height: 65px;
     background-color: #252525;
     border: none;
-    margin: 10px;
+    margin: 20px;
+    padding: 15px;
+    color: #FCFCFC;
+    font-family: 'Heebo', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+#chceckbox {
+    color: turquoise;
+    height: 20px;
+    width: 20px;
+}
+
+.form .gdpr-ceck {
+    padding: 10px;
+    color: turquoise;
+    font-family: 'Heebo', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
 }
 
 .form #message {
-    min-width: 1020px;
-    max-width: 1020px;
-    min-height: 150px;
-    max-height: 250px;
+    min-width: 1150px;
+    max-width: 1150px;
+    min-height: 220px;
+    max-height: 440px;
     background-color: #252525;
     border: none;
-    margin: 10px;
+    margin: 20px;
+    padding: 15px;
+    color: #FCFCFC;
+    font-family: 'Heebo', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
 }
 
 .form-row {
@@ -2685,4 +2714,5 @@ ol li {
     animation-delay: 0.4s;
     box-shadow: inset 10px 1px 70px 10px rgba(79, 194, 185, 0.7);
     transition: 0.4s;
+    cursor: pointer;
 }
