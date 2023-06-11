@@ -2601,14 +2601,14 @@ ol li {
     font-weight: 400;
 }
 #chceckbox {
-    color: turquoise;
+    color: #66fcf1;
     height: 20px;
     width: 20px;
 }
 
 .form .gdpr-ceck {
     padding: 10px;
-    color: turquoise;
+    color: #66fcf1;
     font-family: 'Heebo', sans-serif;
     font-size: 15px;
     font-weight: 400;
@@ -2644,7 +2644,6 @@ ol li {
     justify-content: center;
 }
 
-
 .center{
     text-align: center;
 }
@@ -2653,17 +2652,20 @@ ol li {
     visibility: hidden;
     min-width: 450px;
     margin-left: -200px;
-    background-color: white;
+    background-color: #252525;
     box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
-    color: forestgreen;
+    color: #66fcf1;
     text-align: center;
     border-radius: 10px;
-    padding: 16px;
+    padding: 20px;
     position: fixed;
     z-index: 999;
     left: 50%;
-    bottom: 30px;
-    font-size: 16px;
+    bottom: 430px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid #FCFCFC;
 }
 
 #toast.show {
@@ -2673,23 +2675,23 @@ ol li {
 }
 
 @-webkit-keyframes fadein {
-    from {bottom: 0; opacity: 0;}
-    to {bottom: 30px; opacity: 1;}
+    from {bottom: 400px; opacity: 0;}
+    to {bottom: 430px; opacity: 1;}
 }
 
 @keyframes fadein {
-    from {bottom: 0; opacity: 0;}
-    to {bottom: 30px; opacity: 1;}
+    from {bottom: 400px; opacity: 0;}
+    to {bottom: 430px; opacity: 1;}
 }
 
 @-webkit-keyframes fadeout {
-    from {bottom: 30px; opacity: 1;}
-    to {bottom: 0; opacity: 0;}
+    from {bottom: 430px; opacity: 1;}
+    to {bottom: 400px; opacity: 0;}
 }
 
 @keyframes fadeout {
-    from {bottom: 30px; opacity: 1;}
-    to {bottom: 0; opacity: 0;}
+    from {bottom: 430px; opacity: 1;}
+    to {bottom: 400px; opacity: 0;}
 }
 .checkicon i{
     font-size: 40px;
