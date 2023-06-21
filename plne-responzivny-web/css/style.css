@@ -3147,6 +3147,7 @@ ol li {
     font-family: 'Heebo', sans-serif;
     font-size: 15px;
     font-weight: 400;
+    outline: none;
 }
 
 .form #services {
@@ -3156,15 +3157,19 @@ ol li {
     border: none;
     margin: 20px;
     padding: 15px;
-    color: #FCFCFC;
+    color: #757575;
     font-family: 'Heebo', sans-serif;
     font-size: 15px;
     font-weight: 400;
+    -webkit-appearance: none;
+    outline: none;
 }
+
 #chceckbox {
     color: #66fcf1;
     height: 20px;
     width: 20px;
+    outline: none;
 }
 
 .form .gdpr-ceck {
@@ -3189,6 +3194,7 @@ ol li {
     font-family: 'Heebo', sans-serif;
     font-size: 15px;
     font-weight: 400;
+    outline: none;
 }
 
 .form-row {
