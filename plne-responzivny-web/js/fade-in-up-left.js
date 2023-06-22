@@ -1,6 +1,6 @@
-const elements1 = document.querySelectorAll('.new-gen, .concept, .content1, .content2');
-const elements2 = document.querySelectorAll('.text, .text2, .con-head, .proj-head, .skill-head');
-const elements3 = document.querySelectorAll('.photo-galery, .skill-img, .overlay-content, .logo-foot');
+const elements1 = document.querySelectorAll('.new-gen, .concept, .content1, .content2'); // Fade In Up
+const elements2 = document.querySelectorAll('.text, .text2, .con-head, .proj-head, .skill-head, .port-foto'); // Fade In Left
+const elements3 = document.querySelectorAll('.photo-galery, .skill-img, .overlay-content, .logo-foot'); //Fade In
 
 elements1.forEach(function (element, index) {
     element.classList.add('fade-in-delay-' + index);
