@@ -321,7 +321,8 @@
         <!-------------COPYRIGHT-------------->
         <section class="copy-write">
             <div class="copy-box">
-                <p>2023 © All rights reserved. Website by <a class="text-link" href="https://www.jpgeneration.sk">JP GENERATION</a>.</p>
+                <p>2023 © All rights reserved. Website by <a class="text-link" href="https://www.jpgeneration.sk">JP
+                        GENERATION</a>.</p>
             </div>
         </section>
 </footer>
@@ -330,7 +331,7 @@
 <!-------------JAVA SCRIPT-------------->
 <script src="../js/nav.js" type="text/javascript"></script>
 <script src="../js/dropdown-nav.js" type="text/javascript"></script>
+<script src="../js/fade-in-up-left.js" type="text/javascript"></script>
 <script crossorigin="anonymous" src="https://kit.fontawesome.com/6d4730ed07.js"></script>
-
 </body>
 </html>

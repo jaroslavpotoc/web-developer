@@ -1,5 +1,6 @@
-const elements1 = document.querySelectorAll('.new-gen, .concept, .content1, .content2, .photo-galery');
-const elements2 = document.querySelectorAll('.con-head, .proj-head');
+const elements1 = document.querySelectorAll('.new-gen, .concept, .content1, .content2');
+const elements2 = document.querySelectorAll('.text, .text2, .con-head, .proj-head, .skill-head');
+const elements3 = document.querySelectorAll('.photo-galery, .skill-img, .overlay-content, .logo-foot');
 
 elements1.forEach(function (element, index) {
     element.classList.add('fade-in-delay-' + index);
@@ -7,6 +8,11 @@ elements1.forEach(function (element, index) {
 });
 
 elements2.forEach(function (element, index) {
+    element.classList.add('fade-in-delay-' + index)
+    element.style.opacity = 0;
+});
+
+elements3.forEach(function (element, index) {
     element.classList.add('fade-in-delay-' + index)
     element.style.opacity = 0;
 });
@@ -37,9 +43,16 @@ function animateOnScroll() {
         }
     });
 
+    elements3.forEach(function (element) {
+        if (isElementInViewport(element) && !element.classList.contains('show')) {
+            element.style.opacity = 1;
+            element.classList.add('show', 'animate__animated', 'animate__fadeIn');
+        }
+    });
+
     // Odstrániť event listener až po načítaní všetkých prvkov
     if (
-        document.querySelectorAll('.show').length === elements1.length + elements2.length
+        document.querySelectorAll('.show').length === elements1.length + elements2.length + elements3.length
     ) {
         window.removeEventListener('scroll', animateOnScroll);
     }
