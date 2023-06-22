@@ -6,14 +6,11 @@
     <script>
         window.dataLayer = window.dataLayer || [];
 
-
         function gtag() {
             dataLayer.push(arguments);
         }
 
-
         gtag('js', new Date());
-
 
         gtag('config', 'G-408VDD82V3');
     </script>
@@ -23,7 +20,7 @@
     <!-- End cookieyes banner -->
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Kontakt - JP GENERATION</title>
+    <title>JP GENERATION</title>
     <link href="../image/logo/asset-8-8.png" rel="icon" type="image/x-icon">
     <link href="../css/style.css" rel="stylesheet">
     <link href="../css/media.css" rel="stylesheet">
@@ -94,101 +91,36 @@
             <a href="kontakt.html">Kontakt</a>
         </div>
     </div>
+<br>
+<br>
+<!-------------SERVICES-------------->
+<section class="services">
+    <?php
+    $meno_zakaznika = $_POST["name"];
+    echo "<p>Meno zákaznika: </p>". "<span>".$meno_zakaznika. "</span>";
+    echo "<br>" ;
+    $priezvisko_zakaznika = $_POST["lastname"];
+    echo "<p>Priezvisko zákaznika: </p>". "<span>" .$priezvisko_zakaznika. "</span>";
+    echo "<br>" ;
+    $email_zakaznika = $_POST["email"];
+    echo "<p>E-mail zákaznika:\n </p>". "<span>" .$email_zakaznika. "</span>";
+    echo "<br>" ;
+    $predmet_spravy = $_POST["subject"];
+    echo "<p>Predmet zákaznika:\n </p>". "<span>" .$predmet_spravy. "</span>";
+    echo "<br>" ;
+    $sluzba = $_POST["services"];
+    echo "<p>Služba ktorú si vybral zákaznik:\n </p>". "<span>" .$sluzba. "</span>";
+    echo "<br>" ;
+    $sprava = $_POST["message"];
+    echo "<p>Správa zákazníka:\n</p>" . "<pre><span>" .$sprava. "</span></pre>";
+    echo "<br>" ;
+    $gdpr = $_POST["checkbox"];
+    echo "<p>Zákaznik súhlasi s GDPR: </p>". "<span>" .$gdpr. "</span>";
+    ?>
 </section>
-<!-------------ZACIATOK CONTENTU-------------->
-<section class="services-conta">
-    <header class="headline-conta">
-        <h2>Nájdete nás</h2>
-    </header>
-    <div class="con-look-conta">
-        <span class="span-con">Už len jeden krok od digitálnej generácie</span>
-    </div>
-    <section class="contact">
-        <div class="contact-row">
-            <div class="contact-col">
-                <i class="fa-solid fa-mobile-screen-button"></i>
-                <h3>Telefóne číslo</h3>
-                <p>+421 907 112 358</p>
-            </div>
-            <div class="contact-col con-mid">
-                <i class="fa-solid fa-location-dot"></i>
-                <h3>Adresa</h3>
-                <p>Niekde na planéte Zem</p>
-            </div>
-            <div class="contact-col">
-                <i class="fa-solid fa-envelope-open-text"></i>
-                <h3>E–mail</h3>
-                <p>info@jpgeneration.sk</p>
-            </div>
-        </div>
-    </section>
-</section>
-<!-------------FORMULAR------------->
-<section class="services-conta">
-    <header class="headline-conta">
-        <h2>Pošlite nám správu!</h2>
-    </header>
-    <div class="con-look-conta">
-        <span class="span-con">V prípade otázok nás môžete kontaktovať cez tento formulár</span>
-    </div>
-</section>
-<section class="form">
-    <div class="form-row">
-        <form action="spracuj-formular.php" method="post">
-            <div class="form-wrap">
-                    <label for="name">
-                    <input type="text" id="name" name="name" placeholder="Meno" maxlength="64" required>
-                    </label>
-                    <label for="lastname">
-                    <input type="text" id="lastname" name="lastname" placeholder="Priezvisko" maxlength="64" required>
-                    </label>
-                    <label for="email">
-                    <input type="text" id="email" name="email" placeholder="E - mail" maxlength="64" pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" required>
-                    </label>
-                    <label for="subject">
-                    <input type="text" id="subject" name="subject" placeholder="Predmet" maxlength="64" required>
-                    </label>
-                </div>
-                <div class="form-wrap">
-                    <label for="services">
-                        <select id="services" name="services" required>
-                            <option value="none" disabled selected hidden>Vyberte si službu</option>
-                            <option value="foto-production">Foto produkcia</option>
-                            <option value="video-production">Video produkcia</option>
-                            <option value="graphic-design">Grafický dizajn</option>
-                            <option value="wordpress-web">Wordpress web</option>
-                            <option value="domain-hosting-managment">Správa domény a hostingu</option>
-                            <option value="digital-strategy">Digitálna stratégia</option>
-                            <option value="other">Iné..</option>
-                        </select>
-                    </label>
-                </div>
-                <div class="form-wrap">
-            <label for="message">
-            <textarea type="text" id="message" name="message" placeholder="Vaša správa..." minlength="5" maxlength="1400"
-                      required></textarea>
-            </label>
-                </div>
-            <div class="form-wrap">
-                <label for="chceckbox">
-                <input id="chceckbox" name="checkbox" type="checkbox" required><a class="gdpr-ceck" href="gdpr.html" target="_blank">Súhlasim s GDPR</a>
-                </label>
-            </div>
-            <div class="form-wrap">
-                <label for="submit">
-                <input id="submit" class="submit-btn" onclick="toastFunction()" type="submit" name="submit" value="ODOSLAŤ">
-                </label>
-            </div>
-            <div id="toast">
-                Dostali sme vašu správu. Vďaka!
-            </div>
-        </form>
-    </div>
-</section>
-<!-------------MAPA------------->
-<section class="google-map">
-    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1308.7135232393316!2d21.226232!3d49.00246!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ef29a65d6762f%3A0x70dfa9855d39e2fe!2sMatice%20slovenskej%204768%2F4%2C%20080%2001%20Pre%C5%A1ov%2C%20Slovensko!5e0!3m2!1ssk!2sus!4v1686171964905!5m2!1ssk!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</section>
+
+<br>
+<br>
 <!-------------FOOTER-------------->
 <footer>
     <section class="main">
@@ -327,10 +259,11 @@
 <br>
 <br>
 <!-------------JAVA SCRIPT-------------->
+<script src="../js/slider.js" type="text/javascript"></script>
 <script src="../js/nav.js" type="text/javascript"></script>
 <script src="../js/dropdown-nav.js" type="text/javascript"></script>
+<script src="../js/project-gallery.js" type="text/javascript"></script>
+<script src="../js/skill-bar.js" type="text/javascript"></script>
 <script src="https://kit.fontawesome.com/6d4730ed07.js" crossorigin="anonymous"></script>
-<script src="../js/submit-alert.js" type="text/javascript"></script>
 </body>
 </html>
-
