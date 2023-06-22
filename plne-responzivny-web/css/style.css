@@ -2716,6 +2716,18 @@ ol li {
 
 }
 
+.zak-text {
+    font-size: 15px;
+    margin: 10px 125px 10px 125px;
+    padding: 10px 0 0 0;
+    text-align: left;
+    line-height: 20px;
+    font-weight: 300;
+    color: #D0D0D0;
+    font-family: 'Heebo', sans-serif;
+    word-break: keep-all;
+}
+
 .costumers > div {
     flex: 1 3;
     -webkit-flex: 1 3;
@@ -2798,21 +2810,23 @@ ol li {
 .about-text {
     position: absolute;
     padding-left: 40px;
+    padding-right: 40px;
     max-width: 500px;
 }
 
 .about-text-2 {
     position: absolute;
     padding-left: 40px;
+    padding-right: 40px;
     max-width: 600px;
 }
 
 .spacer-img-b {
-    padding: 0 0 460px;
+    padding: 0 0 430px;
 }
 
 .spacer-img-b2 {
-    padding: 0 0 180px;
+    padding: 0 0 150px;
 }
 
 .about-h3 {
