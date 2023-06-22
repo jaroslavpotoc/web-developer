@@ -77,8 +77,6 @@ span {
     max-width: 50px;
     height: auto;
 }
-
-
 /*------------ DROPDOWN MENU ---------------*/
 
 
@@ -3293,14 +3291,21 @@ ol li {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.5s, visibility 0s linear 0.5s;
+    -webkit-transition: opacity 0.5s, visibility 0s linear 0.5s;
+    -moz-transition: opacity 0.5s, visibility 0s linear 0.5s;
+    -o-transition: opacity 0.5s, visibility 0s linear 0.5s;
+    -ms-transition: opacity 0.5s, visibility 0s linear 0.5s;
 }
 
 .fade-in-right.show {
     opacity: 1;
     visibility: visible;
     transition-delay: 0s;
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -o-transition-delay: 0s;
 }
 
 .animate__animated {
-    /* Prípadné definície animačných tried animate.css */
+
 }

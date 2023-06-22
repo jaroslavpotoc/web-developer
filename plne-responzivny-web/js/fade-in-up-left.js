@@ -1,6 +1,7 @@
-const elements1 = document.querySelectorAll('.new-gen, .concept, .content1, .content2'); // Fade In Up
-const elements2 = document.querySelectorAll('.text, .text2, .con-head, .proj-head, .skill-head, .port-foto'); // Fade In Left
-const elements3 = document.querySelectorAll('.photo-galery, .skill-img, .overlay-content, .logo-foot'); //Fade In
+const elements1 = document.querySelectorAll('.new-gen, .concept, .content1, .content2, .content-ser-1, .content-ser-2, .content-ser-3, .content-ser-4'); // Fade In Up
+const elements2 = document.querySelectorAll('.text, .text2, .con-head, .proj-head, .skill-head, .port-foto, .port-video, .headline-con, .con-look-ser, .con-look-ser-faq, .skill-text'); // Fade In Left
+const elements3 = document.querySelectorAll('.photo-galery, .skill-img, .overlay-content, .logo-foot, .content-ser-line'); //Fade In
+const elements4 = document.querySelectorAll('.gallery-item, .video-column, .menu-1, .menu-2, .menu-3, .menu-4, .menu-5'); // Zoom In
 
 elements1.forEach(function (element, index) {
     element.classList.add('fade-in-delay-' + index);
@@ -8,12 +9,17 @@ elements1.forEach(function (element, index) {
 });
 
 elements2.forEach(function (element, index) {
-    element.classList.add('fade-in-delay-' + index)
+    element.classList.add('fade-in-delay-' + index);
     element.style.opacity = 0;
 });
 
 elements3.forEach(function (element, index) {
-    element.classList.add('fade-in-delay-' + index)
+    element.classList.add('fade-in-delay-' + index);
+    element.style.opacity = 0;
+});
+
+elements4.forEach(function (element, index) {
+    element.classList.add('fade-in-delay-' + index);
     element.style.opacity = 0;
 });
 
@@ -50,9 +56,16 @@ function animateOnScroll() {
         }
     });
 
+    elements4.forEach(function (element) {
+        if (isElementInViewport(element) && !element.classList.contains('show')) {
+            element.style.opacity = 1;
+            element.classList.add('show', 'animate__animated', 'animate__zoomIn');
+        }
+    });
+
     // Odstrániť event listener až po načítaní všetkých prvkov
     if (
-        document.querySelectorAll('.show').length === elements1.length + elements2.length + elements3.length
+        document.querySelectorAll('.show').length === elements1.length + elements2.length + elements3.length + elements4.length
     ) {
         window.removeEventListener('scroll', animateOnScroll);
     }
