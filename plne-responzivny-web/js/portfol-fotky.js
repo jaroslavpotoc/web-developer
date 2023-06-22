@@ -99,6 +99,6 @@ function filterImages() {
         } else {
             item.style.display = "none";
         }
-        item.dataset.index = index + 1; // Nastavenie dataset atribútu pre index fotky
+        item.dataset.index = index + 1;
     });
 }

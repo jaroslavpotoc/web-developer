@@ -3289,9 +3289,18 @@ ol li {
 }
 
 /*-------------ANIMATIONS--------------*/
-
 .fade-in-right {
     opacity: 0;
-    transform: translateX(100px);
-    transition: opacity 1s, transform 1s;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0s linear 0.5s;
+}
+
+.fade-in-right.show {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
+}
+
+.animate__animated {
+    /* Prípadné definície animačných tried animate.css */
 }

@@ -1,14 +1,14 @@
-var acc = document.getElementsByClassName("accordion");
-var panels = document.getElementsByClassName("panel");
-var lastPanelIndex = acc.length - 1;
-var i;
+const acc = document.getElementsByClassName("accordion");
+const panels = document.getElementsByClassName("panel");
+const lastPanelIndex = acc.length - 1;
+let i;
 
 for (i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function () {
-        var panel = this.nextElementSibling;
-        var isActive = panel.classList.contains("activefaq");
+        const panel = this.nextElementSibling;
+        const isActive = panel.classList.contains("activefaq");
 
-        for (var j = 0; j < panels.length; j++) {
+        for (let j = 0; j < panels.length; j++) {
             panels[j].style.maxHeight = null;
             panels[j].classList.remove("activefaq");
             acc[j].classList.remove("activefaq");
