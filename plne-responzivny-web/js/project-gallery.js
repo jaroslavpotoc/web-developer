@@ -26,7 +26,6 @@ window.addEventListener("scroll", () => {
 });
 
 window.addEventListener("load", () => {
-    const galleryWidth = gallery.scrollWidth;
     const modalEle = document.querySelector(".modal-port");
     const modalImage = document.querySelector(".modalImage");
     Array.from(document.querySelectorAll(".pro-gal")).forEach(item => {

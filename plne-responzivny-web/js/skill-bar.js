@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var progressBarElements = document.querySelectorAll('.progress-bar');
-    var animationStarted = false;
+    const progressBarElements = document.querySelectorAll('.progress-bar');
+    let animationStarted = false;
 
     function startAnimation() {
         if (animationStarted) {
@@ -8,8 +8,8 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         progressBarElements.forEach(function (progressBar) {
-            var progressContent = progressBar.querySelector('.progress-content');
-            var percentage = progressBar.getAttribute('data-percentage');
+            const progressContent = progressBar.querySelector('.progress-content');
+            const percentage = progressBar.getAttribute('data-percentage');
 
             animateProgress(progressContent, percentage);
             animateNumberMark(progressBar, percentage);
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function isElementInViewport(element) {
-        var rect = element.getBoundingClientRect();
+        const rect = element.getBoundingClientRect();
         return (
             rect.top >= 0 &&
             rect.left >= 0 &&
@@ -41,18 +41,18 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function animateProgress(element, targetWidth) {
-    var currentWidth = 0;
-    var animationDuration = 2000;
-    var animationStartTime = null;
+    const currentWidth = 0;
+    const animationDuration = 2000;
+    let animationStartTime = null;
 
     function animate(timestamp) {
         if (!animationStartTime) {
             animationStartTime = timestamp;
         }
 
-        var progress = timestamp - animationStartTime;
-        var progressRatio = Math.min(progress / animationDuration, 1);
-        var width = targetWidth * progressRatio;
+        const progress = timestamp - animationStartTime;
+        const progressRatio = Math.min(progress / animationDuration, 1);
+        const width = targetWidth * progressRatio;
 
         element.style.width = width + '%';
 
@@ -65,20 +65,20 @@ function animateProgress(element, targetWidth) {
 }
 
 function animateNumberMark(progressBar, targetPosition) {
-    var numberMark = progressBar.querySelector('.progress-number-mark');
-    var percentElement = numberMark.querySelector('.percent');
-    var currentPosition = 0;
-    var animationDuration = 2000;
-    var animationStartTime = null;
+    const numberMark = progressBar.querySelector('.progress-number-mark');
+    const percentElement = numberMark.querySelector('.percent');
+    const currentPosition = 0;
+    const animationDuration = 2000;
+    let animationStartTime = null;
 
     function animate(timestamp) {
         if (!animationStartTime) {
             animationStartTime = timestamp;
         }
 
-        var progress = timestamp - animationStartTime;
-        var progressRatio = Math.min(progress / animationDuration, 1);
-        var position = targetPosition * progressRatio;
+        const progress = timestamp - animationStartTime;
+        const progressRatio = Math.min(progress / animationDuration, 1);
+        const position = targetPosition * progressRatio;
 
         numberMark.style.left = position + '%';
         percentElement.innerHTML = Math.round(position) + '%';
