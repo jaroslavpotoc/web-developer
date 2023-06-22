@@ -142,20 +142,33 @@
             $gdpr = "Nie";
         }
 
-        $email_body = "Meno zákazníka: " . $meno_zakaznika . "\n" .
-            "Priezvisko zákazníka: " . $priezvisko_zakaznika . "\n" .
-            "E-mail zákazníka: " . $email_zakaznika . "\n" .
-            "Predmet zákazníka: " . $predmet_spravy . "\n" .
-            "Služba, ktorú si zákazník vybral: " . $sluzba . "\n" .
-            "Správa zákazníka: " . $sprava . "\n" .
-            "Zákazník súhlasí s GDPR: " . $gdpr;
+        $cas_vyplnenia = date('Y-m-d H:i:s', time());
+
+        $email_body = '<p style="font-size: 12px; font-weight: 600; line-height: 15px;">Meno zákazníka:</p>' .
+            '<p style="color: #00FFFF; font-size: 15px; font-weight: 400; line-height: 15px;">' . $meno_zakaznika . '</p>' .
+            '<p style="font-size: 12px; font-weight: 600; line-height: 15px;">Priezvisko zákazníka:</p>' .
+            '<p style="color: #00FFFF; font-size: 15px; font-weight: 400; line-height: 15px;">' . $priezvisko_zakaznika . '</p>' .
+            '<p style="font-size: 12px; font-weight: 600; line-height: 15px;">E-mail zákazníka:</p>' .
+            '<p style="color: #00FFFF; font-size: 15px; font-weight: 400; line-height: 15px;">' . $email_zakaznika . '</p>' .
+            '<p style="font-size: 12px; font-weight: 600; line-height: 15px;">Predmet zákazníka:</p>' .
+            '<p style="color: #00FFFF; font-size: 15px; font-weight: 400; line-height: 15px;">' . $predmet_spravy . '</p>' .
+            '<p style="font-size: 12px; font-weight: 600; line-height: 15px;">Služba, ktorú si zákazník vybral:</p>' .
+            '<p style="color: #00FFFF; font-size: 15px; font-weight: 400; line-height: 15px;">' . $sluzba . '</p>' .
+            '<p style="font-size: 12px; font-weight: 600; line-height: 15px;">Správa zákazníka:</p>' .
+            '<p style="color: #00FFFF; font-size: 15px; font-weight: 400; line-height: 15px;">' . $sprava . '</p>' .
+            '<p style="font-size: 12px; font-weight: 600; line-height: 15px;">Zákazník súhlasí s GDPR:</p>' .
+            '<p style="color: #00FFFF; font-size: 15px; font-weight: 400; line-height: 15px;">' . $gdpr . '</p>' .
+            '<p style="font-size: 12px; font-weight: 600; line-height: 15px;">Presný čas vyplnenia formulára:</p>' .
+            '<p style="color: #00FFFF; font-size: 15px; font-weight: 400; line-height: 15px;">' . $cas_vyplnenia . '</p>';
+
+
 
         $odkial = "info@jpgeneration.sk";
-        $predmet = "Nový formulár od zákazníka";
+        $predmet = "Nová správa od: " . $meno_zakaznika ." ". $priezvisko_zakaznika ;
 
-        // Odeslání e-mailu
         $headers = "From: " . $odkial . "\r\n";
         $headers .= "Reply-To: " . $email_zakaznika . "\r\n";
+        $headers .= "Content-Type: text/html; charset=UTF-8\r\n"; // Nastavenie typu obsahu na HTML
 
         if (mail($odkial, $predmet, $email_body, $headers)) {
             header("Location: kontakt-vdaka.php");
@@ -165,6 +178,7 @@
         }
     }
     ?>
+
 </section>
 <br>
 <br>

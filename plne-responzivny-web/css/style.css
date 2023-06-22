@@ -3286,6 +3286,12 @@ ol li {
     -o-transition: 0.4s;
     -ms-transition: 0.4s;
     cursor: pointer;
+}
 
+/*-------------ANIMATIONS--------------*/
 
+.fade-in-right {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: opacity 1s, transform 1s;
 }
