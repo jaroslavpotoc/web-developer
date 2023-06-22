@@ -160,7 +160,7 @@ span {
 }
 
 /* Add a dark background on topnav links and the dropdown button on hover */
-.topnav a:hover,.dropbtn:hover i, .dropdown:hover .dropbtn {
+.topnav a:hover, .dropbtn:hover i, .dropdown:hover .dropbtn {
     color: #66FCF1;
     transition: 0.4s;
     -webkit-transition: 0.4s;
@@ -840,7 +840,8 @@ div > h3 {
     position: absolute;
     width: 100%;
     height: 100%;
-    display: flex; !important;
+    display: flex;
+!important;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -2166,7 +2167,7 @@ iframe {
     flex-direction: column;
     flex: 2 2;
     -webkit-flex: 2 2;
-    -ms-flex: 2 2 ;
+    -ms-flex: 2 2;
     padding: 100px 180px 100px 0;
 }
 
@@ -2375,6 +2376,7 @@ ol li {
     -ms-flex: 1 3;
 
 }
+
 .block-gray {
     background-color: #121212;
     border: 2px solid transparent;
@@ -2912,6 +2914,7 @@ ol li {
     padding: 0 110px 0 110px;
     height: 20px;
 }
+
 .about-born {
     display: flex;
     display: -webkit-box;
@@ -2936,6 +2939,7 @@ ol li {
     position: relative;
     overflow: hidden;
 }
+
 .team-title {
     margin: 140px 0 0 30px;
     text-align: center;
@@ -2949,7 +2953,7 @@ ol li {
 }
 
 .overlay-photo {
-    background-color: rgba(20,20,20,.7);
+    background-color: rgba(20, 20, 20, .7);
     position: absolute;
     top: 0;
     width: 100%;
@@ -3146,7 +3150,7 @@ ol li {
 }
 
 .form #name, #lastname,
- #email, #subject {
+#email, #subject {
     min-width: 555px;
     min-height: 65px;
     background-color: #252525;
@@ -3227,7 +3231,7 @@ ol li {
     justify-content: center;
 }
 
-.center{
+.center {
     text-align: center;
 }
 
@@ -3264,25 +3268,50 @@ ol li {
 }
 
 @-webkit-keyframes fadein {
-    from {bottom: 400px; opacity: 0;}
-    to {bottom: 430px; opacity: 1;}
+    from {
+        bottom: 400px;
+        opacity: 0;
+    }
+    to {
+        bottom: 430px;
+        opacity: 1;
+    }
 }
 
 @keyframes fadein {
-    from {bottom: 400px; opacity: 0;}
-    to {bottom: 430px; opacity: 1;}
+    from {
+        bottom: 400px;
+        opacity: 0;
+    }
+    to {
+        bottom: 430px;
+        opacity: 1;
+    }
 }
 
 @-webkit-keyframes fadeout {
-    from {bottom: 430px; opacity: 1;}
-    to {bottom: 400px; opacity: 0;}
+    from {
+        bottom: 430px;
+        opacity: 1;
+    }
+    to {
+        bottom: 400px;
+        opacity: 0;
+    }
 }
 
 @keyframes fadeout {
-    from {bottom: 430px; opacity: 1;}
-    to {bottom: 400px; opacity: 0;}
+    from {
+        bottom: 430px;
+        opacity: 1;
+    }
+    to {
+        bottom: 400px;
+        opacity: 0;
+    }
 }
-.checkicon i{
+
+.checkicon i {
     font-size: 40px;
     color: #47d764;
 }
