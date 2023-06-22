@@ -6,11 +6,14 @@
     <script>
         window.dataLayer = window.dataLayer || [];
 
+
         function gtag() {
             dataLayer.push(arguments);
         }
 
+
         gtag('js', new Date());
+
 
         gtag('config', 'G-408VDD82V3');
     </script>
@@ -20,7 +23,7 @@
     <!-- End cookieyes banner -->
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>JP GENERATION</title>
+    <title>Kontakt - JP GENERATION</title>
     <link href="../image/logo/asset-8-8.png" rel="icon" type="image/x-icon">
     <link href="../css/style.css" rel="stylesheet">
     <link href="../css/media.css" rel="stylesheet">
@@ -92,46 +95,97 @@
             <a href="kontakt.html">Kontakt</a>
         </div>
     </div>
-    <br>
-    <br>
-    <!-------------SERVICES-------------->
-    <section class="services">
-        <?php
-        $meno_zakaznika = $_POST["name"];
-        echo "<p>Meno zákaznika: </p>" . "<span>" . $meno_zakaznika . "</span>";
-        echo "<br>";
-        $priezvisko_zakaznika = $_POST["lastname"];
-        echo "<p>Priezvisko zákaznika: </p>" . "<span>" . $priezvisko_zakaznika . "</span>";
-        echo "<br>";
-        $email_zakaznika = $_POST["email"];
-        echo "<p>E-mail zákaznika:\n </p>" . "<span>" . $email_zakaznika . "</span>";
-        echo "<br>";
-        $predmet_spravy = $_POST["subject"];
-        echo "<p>Predmet zákaznika:\n </p>" . "<span>" . $predmet_spravy . "</span>";
-        echo "<br>";
-        $sluzba = $_POST["services"];
-        echo "<p>Služba ktorú si vybral zákaznik:\n </p>" . "<span>" . $sluzba . "</span>";
-        echo "<br>";
-        $sprava = $_POST["message"];
-        echo "<p>Správa zákazníka:\n</p>" . "<pre><span>" . $sprava . "</span></pre>";
-        echo "<br>";
-        $gdpr = $_POST["checkbox"];
-        echo "<p>Zákaznik súhlasi s GDPR: </p>" . "<span>" . $gdpr . "</span>";
-        ?>
+</section>
+<!-------------ZACIATOK CONTENTU-------------->
+<section class="services-conta">
+    <header class="headline-conta">
+        <h2>Dostali sme vašu správu!</h2>
+    </header>
+    <div class="con-look-conta">
+        <span class="span-con">Vďaka! Náš tím Vás kontaktuje v najbližšom možnom čase.</span>
+    </div>
+    <section class="contact">
+        <div class="contact-row">
+            <div class="contact-col">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <h3>Telefóne číslo</h3>
+                <p>+421 907 112 358</p>
+            </div>
+            <div class="contact-col con-mid">
+                <i class="fa-solid fa-location-dot"></i>
+                <h3>Adresa</h3>
+                <p>Niekde na planéte Zem</p>
+            </div>
+            <div class="contact-col">
+                <i class="fa-solid fa-envelope-open-text"></i>
+                <h3>E–mail</h3>
+                <p>info@jpgeneration.sk</p>
+            </div>
+        </div>
     </section>
+</section>
+<!-------------SPRACOVANIE FORMULARA-------------->
+<section class="services">
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $meno_zakaznika = $_POST["name"];
+        $priezvisko_zakaznika = $_POST["lastname"];
+        $email_zakaznika = $_POST["email"];
+        $predmet_spravy = $_POST["subject"];
+        $sluzba = $_POST["services"];
+        $sprava = $_POST["message"];
+        $gdpr = $_POST["checkbox"];
 
-    <br>
-    <br>
-    <!-------------FOOTER-------------->
-    <footer>
-        <section class="main">
-            <div class="fot-logo-disc">
-                <div class="fot-logo">
-                    <a href="index.html">
-                        <img alt="logo jp generation" class="logo-foot" src="../image/logo/asset-8-8.png">
-                    </a>
-                </div>
-                <div class="slog">
+        if ($gdpr == "on") {
+            $gdpr = "Áno";
+        } else {
+            $gdpr = "Nie";
+        }
+
+        $email_body = "Meno zákazníka: " . $meno_zakaznika . "\n" .
+            "Priezvisko zákazníka: " . $priezvisko_zakaznika . "\n" .
+            "E-mail zákazníka: " . $email_zakaznika . "\n" .
+            "Predmet zákazníka: " . $predmet_spravy . "\n" .
+            "Služba, ktorú si zákazník vybral: " . $sluzba . "\n" .
+            "Správa zákazníka: " . $sprava . "\n" .
+            "Zákazník súhlasí s GDPR: " . $gdpr;
+
+        $odkial = "info@jpgeneration.sk";
+        $predmet = "Nový formulár od zákazníka";
+
+        // Odeslání e-mailu
+        $headers = "From: " . $odkial . "\r\n";
+        $headers .= "Reply-To: " . $email_zakaznika . "\r\n";
+
+        if (mail($odkial, $predmet, $email_body, $headers)) {
+            header("Location: kontakt-vdaka.php");
+            exit;
+        } else {
+            echo "Došlo k chybe pri odosielani formuláru. Zkuste to prosím znovu.";
+        }
+    }
+    ?>
+</section>
+<br>
+<br>
+<!-------------MAPA------------->
+<section class="google-map">
+    <iframe allowfullscreen=""
+            class="map"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1308.7135232393316!2d21.226232!3d49.00246!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ef29a65d6762f%3A0x70dfa9855d39e2fe!2sMatice%20slovenskej%204768%2F4%2C%20080%2001%20Pre%C5%A1ov%2C%20Slovensko!5e0!3m2!1ssk!2sus!4v1686171964905!5m2!1ssk!2sus"
+            style="border:0;"></iframe>
+</section>
+<!-------------FOOTER-------------->
+<footer>
+    <section class="main">
+        <div class="fot-logo-disc">
+            <div class="fot-logo">
+                <a href="index.html">
+                    <img alt="logo jp generation" class="logo-foot" src="../image/logo/asset-8-8.png">
+                </a>
+            </div>
+            <div class="slog">
                     <p>My sme digitálna generácia</p>
                 </div>
                 <div class="line-con1"></div>
@@ -253,18 +307,16 @@
         <!-------------COPYRIGHT-------------->
         <section class="copy-write">
             <div class="copy-box">
-                <p>Copyright © 2023. All rights reserved.</p>
+                <p>2023 © All rights reserved. Website by <a class="text-link" href="https://www.jpgeneration.sk">JP GENERATION</a>.</p>
             </div>
         </section>
-    </footer>
-    <br>
-    <br>
-    <!-------------JAVA SCRIPT-------------->
-    <script src="../js/slider.js" type="text/javascript"></script>
-    <script src="../js/nav.js" type="text/javascript"></script>
-    <script src="../js/dropdown-nav.js" type="text/javascript"></script>
-    <script src="../js/project-gallery.js" type="text/javascript"></script>
-    <script src="../js/skill-bar.js" type="text/javascript"></script>
-    <script src="https://kit.fontawesome.com/6d4730ed07.js" crossorigin="anonymous"></script>
+</footer>
+<br>
+<br>
+<!-------------JAVA SCRIPT-------------->
+<script src="../js/nav.js" type="text/javascript"></script>
+<script src="../js/dropdown-nav.js" type="text/javascript"></script>
+<script crossorigin="anonymous" src="https://kit.fontawesome.com/6d4730ed07.js"></script>
+
 </body>
 </html>
