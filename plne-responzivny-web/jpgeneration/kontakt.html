@@ -137,25 +137,25 @@
     <div class="form-row">
         <form action="kontakt-vdaka.php" method="post">
             <div class="form-wrap">
-                <label for="name">
+                <label class="form-an" for="name">
                     <input id="name" maxlength="64" name="name" placeholder="Meno" required type="text">
                 </label>
-                <label for="lastname">
+                <label class="form-an" for="lastname">
                     <input id="lastname" maxlength="64" name="lastname" placeholder="Priezvisko" required type="text">
                 </label>
-                <label for="email">
+                <label class="form-an" for="email">
                     <input id="email" maxlength="64" name="email"
                            pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$"
                            placeholder="E - mail"
                            required
                            type="email">
                 </label>
-                <label for="subject">
+                <label class="form-an" for="subject">
                     <input id="subject" maxlength="64" name="subject" placeholder="Predmet" required type="text">
                 </label>
             </div>
             <div class="form-wrap">
-                <label for="services">
+                <label class="form-an" for="services">
                     <select id="services" name="services" required>
                         <option disabled hidden selected value="none">Vyberte si službu</option>
                         <option value="foto-production">Foto produkcia</option>
@@ -169,21 +169,21 @@
                 </label>
             </div>
             <div class="form-wrap">
-                <label for="message">
+                <label class="form-an" for="message">
                     <textarea id="message" maxlength="1600" minlength="5" name="message" placeholder="Vaša správa..."
                               required
                               type="text"></textarea>
                 </label>
             </div>
             <div class="form-wrap">
-                <label for="checkbox">
+                <label class="form-an" for="checkbox">
                     <input id="checkbox" name="checkbox" required type="checkbox"><a class="gdpr-ceck" href="gdpr.html"
                                                                                      target="_blank">Súhlasím s
                     GDPR</a>
                 </label>
             </div>
-            <div class="form-wrap">
-                <label for="submit">
+            <div  class="form-wrap">
+                <label class="form-zo" for="submit">
                     <input class="submit-btn" id="submit" name="submit" type="submit" value="ODOSLAŤ">
                 </label>
             </div>

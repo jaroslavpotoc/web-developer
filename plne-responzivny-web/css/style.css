@@ -2900,8 +2900,7 @@ ol li {
 }
 
 
-/* Our Team
--------------------------------------------------------*/
+/*---------------------- Our Team-------------------------------*/
 .container-cv {
     display: flex;
     display: -webkit-box;
@@ -2978,6 +2977,10 @@ ol li {
     -ms-transition: all .2s ease-in-out;
 }
 
+.team-img:hover .overlay-photo {
+    opacity: 1;
+}
+
 .team-details {
     opacity: 0;
     position: absolute;
@@ -3038,6 +3041,9 @@ ol li {
     background-color: #121212;
 }
 
+.team-img:hover .overlay-photo {
+    opacity: 1;
+}
 /*-------------SKILL BAR--------------*/
 
 .container-skill-2 {
