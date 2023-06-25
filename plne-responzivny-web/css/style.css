@@ -3303,7 +3303,7 @@ ol li {
     -ms-transition: opacity 0.5s, visibility 0s linear 0.5s;
 }
 
-.fade-in-right.show {
+.fade-in-right.display {
     opacity: 1;
     visibility: visible;
     transition-delay: 0s;
@@ -3312,6 +3312,13 @@ ol li {
     -o-transition-delay: 0s;
 }
 
-.animate__animated {
-
+.fade-in-right.extract {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -o-transition-delay: 0s;
 }
+
+
